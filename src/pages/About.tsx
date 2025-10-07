@@ -13,8 +13,6 @@ import {
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
 
-import { useLanguage } from '../contexts/LanguageContext';
-
 // Custom hook for intersection observer
 const useIntersectionObserver = (threshold = 0.1) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -76,7 +74,6 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = '' }: { end: number; d
 };
 
 const About = () => {
-  const { t } = useLanguage();
   const [introRef, introVisible] = useIntersectionObserver(0.3);
   const [statsRef, statsVisible] = useIntersectionObserver(0.3);
   const [goalsRef, goalsVisible] = useIntersectionObserver(0.3);
@@ -128,13 +125,13 @@ const About = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-subtle">
+      <section className="pt-40 pb-16 bg-gradient-subtle">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-heading font-bold text-foreground mb-6">
-            {t('aboutPage.hero.title')}
+          <h1 className="text-5xl md:text-6xl font-din font-bold text-foreground mb-6">
+            About NextWave
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            {t('aboutPage.hero.description')}
+            Discover the story behind our passion for digital excellence and innovation
           </p>
         </div>
       </section>
@@ -153,14 +150,14 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
                 <div>
-                  <h2 className="text-4xl font-heading font-bold text-foreground mb-6">
-                    {t('aboutPage.story.title')}
+                  <h2 className="text-4xl font-din font-bold text-foreground mb-6">
+                    Our Story
                   </h2>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                    {t('aboutPage.story.paragraph1')}
+                    Founded with a vision to bridge the gap between creativity and technology, NextWave emerged from a simple belief: that every business deserves a digital presence that truly represents their unique value proposition. Our journey began when a group of passionate designers, developers, and strategists came together with a shared mission to transform how brands connect with their audiences online.
                   </p>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    {t('aboutPage.story.paragraph2')}
+                    Today, we're proud to be a trusted partner for businesses of all sizes, from innovative startups to established enterprises. Our approach combines cutting-edge technology with timeless design principles, ensuring that every project we deliver not only meets current standards but is also built to evolve with the ever-changing digital landscape.
                   </p>
                 </div>
               </div>
@@ -171,10 +168,10 @@ const About = () => {
                     <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center">
                       <Target className="w-6 h-6 text-accent" />
                     </div>
-                    <h3 className="text-2xl font-heading font-bold text-foreground">{t('aboutPage.mission.title')}</h3>
+                    <h3 className="text-2xl font-din font-bold text-foreground">Our Mission</h3>
                   </div>
                   <p className="text-muted-foreground leading-relaxed">
-                    {t('aboutPage.mission.description')}
+                    To empower businesses with innovative digital solutions that drive growth, enhance user experiences, and create lasting connections between brands and their audiences through exceptional design and technology.
                   </p>
                 </div>
                 
@@ -183,10 +180,10 @@ const About = () => {
                     <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
                       <Star className="w-6 h-6 text-primary" />
                     </div>
-                    <h3 className="text-2xl font-heading font-bold text-foreground">{t('aboutPage.vision.title')}</h3>
+                    <h3 className="text-2xl font-din font-bold text-foreground">Our Vision</h3>
                   </div>
                   <p className="text-muted-foreground leading-relaxed">
-                    {t('aboutPage.vision.description')}
+                    To be the leading digital agency that transforms how businesses connect with their customers, setting new standards for creativity, innovation, and excellence in the digital space.
                   </p>
                 </div>
               </div>
@@ -207,11 +204,11 @@ const About = () => {
             }`}
           >
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
-                {t('aboutPage.impact.title')}
+              <h2 className="text-4xl md:text-5xl font-din font-bold text-foreground mb-4">
+                Our Impact
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                {t('aboutPage.impact.subtitle')}
+                Numbers that reflect our commitment to delivering exceptional results
               </p>
             </div>
             
@@ -248,11 +245,11 @@ const About = () => {
             }`}
           >
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
-                {t('aboutPage.values.title')}
+              <h2 className="text-4xl md:text-5xl font-din font-bold text-foreground mb-4">
+                Our Values
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                {t('aboutPage.values.subtitle')}
+                The principles that guide everything we do and shape our approach to every project
               </p>
             </div>
             
@@ -300,7 +297,7 @@ const About = () => {
                             <IconComponent className="w-6 h-6 text-accent" />
                           </div>
                           <div>
-                            <h3 className="text-xl font-heading font-bold text-foreground mb-2">
+                            <h3 className="text-xl font-din font-bold text-foreground mb-2">
                               {value.title}
                             </h3>
                             <p className="text-muted-foreground leading-relaxed">
@@ -327,7 +324,7 @@ const About = () => {
                             <IconComponent className="w-6 h-6 text-primary" />
                           </div>
                           <div>
-                            <h3 className="text-xl font-heading font-bold text-foreground mb-2">
+                            <h3 className="text-xl font-din font-bold text-foreground mb-2">
                               {value.title}
                             </h3>
                             <p className="text-muted-foreground leading-relaxed">

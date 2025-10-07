@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
-import { useLanguage } from "@/contexts/LanguageContext";
 
 export const Hero = () => {
-  const { t } = useLanguage();
   
   const scrollToServices = () => {
     const element = document.getElementById("services");
@@ -30,17 +28,17 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center mt-20">
         <div className="animate-fade-in">
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-heading font-bold mb-6 text-foreground">
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-din font-bold mb-6 text-foreground">
             <span className="inline-block transition-elegant hover:scale-110 cursor-default">
-              {t('hero.title.next')}
+              Next
             </span>
             <span className="inline-block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-scale-in transition-elegant hover:scale-110 cursor-default">
-              {t('hero.title.wave')}
+              Wave
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto font-light">
-            {t('hero.description')}
+            Crafting Digital Excellence Through Innovation and Design
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -50,7 +48,7 @@ export const Hero = () => {
               onClick={scrollToServices}
               className="group"
             >
-              {t('hero.buttons.exploreServices')}
+              Explore Our Services
             </Button>
             <Button
               variant="elegant"
@@ -60,7 +58,7 @@ export const Hero = () => {
                 element?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              {t('hero.buttons.getInTouch')}
+              Get In Touch
             </Button>
           </div>
 

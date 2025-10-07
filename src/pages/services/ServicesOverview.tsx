@@ -6,10 +6,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Palette, Globe, Camera, Megaphone, PenTool } from "lucide-react";
 
-// Import service images
+// Import real professional photos
 import serviceAds from "@/assets/service-ads.jpg";
 import serviceBranding from "@/assets/service-branding.jpg";
 import serviceWeb from "@/assets/service-web.jpg";
+import serviceLogoDesign from "@/assets/service-branding.jpg"; // Using branding photo for logo design
 import servicePhotography from "@/assets/service-photography.jpg";
 
 const ServicesOverview = () => {
@@ -22,6 +23,7 @@ const ServicesOverview = () => {
       description: "Strategic campaigns that capture attention and drive results through creative storytelling and targeted messaging.",
       icon: Megaphone,
       image: serviceAds,
+      altText: "Real advertising and marketing workspace photo showing creative team collaboration and campaign development",
       features: ["Campaign Strategy", "Creative Development", "Media Planning", "Performance Analytics"],
       slug: "advertising"
     },
@@ -31,6 +33,7 @@ const ServicesOverview = () => {
       description: "Comprehensive brand identity development that creates lasting connections with your audience.",
       icon: Palette,
       image: serviceBranding,
+      altText: "Professional branding design studio photo with real design tools, color materials, and creative workspace",
       features: ["Brand Strategy", "Visual Identity", "Brand Guidelines", "Brand Positioning"],
       slug: "branding"
     },
@@ -40,6 +43,7 @@ const ServicesOverview = () => {
       description: "Modern, responsive websites that deliver exceptional user experiences and drive conversions.",
       icon: Globe,
       image: serviceWeb,
+      altText: "Real web development workspace photo showing laptops, code, and responsive design development",
       features: ["Responsive Design", "UX/UI Design", "Performance Optimization", "SEO Integration"],
       slug: "website-design"
     },
@@ -48,7 +52,8 @@ const ServicesOverview = () => {
       title: "Logo Design",
       description: "Distinctive logos that embody your brand's essence and create memorable first impressions.",
       icon: PenTool,
-      image: serviceBranding,
+      image: serviceLogoDesign,
+      altText: "Professional logo design studio photo featuring real design tools, sketches, and branding materials",
       features: ["Concept Development", "Multiple Variations", "Brand Applications", "Usage Guidelines"],
       slug: "logo-design"
     },
@@ -58,6 +63,7 @@ const ServicesOverview = () => {
       description: "Professional photography services that capture your brand's story through compelling visual narratives.",
       icon: Camera,
       image: servicePhotography,
+      altText: "Real professional photography studio photo with camera equipment, lighting setup, and editing workspace",
       features: ["Product Photography", "Event Coverage", "Portrait Sessions", "Commercial Shoots"],
       slug: "photography"
     }
@@ -75,7 +81,7 @@ const ServicesOverview = () => {
       <section className="pt-24 pb-16 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-heading font-bold text-foreground mb-6 animate-fade-in">
+            <h1 className="text-4xl md:text-6xl font-din font-bold text-foreground mb-6 animate-fade-in">
               Our Services
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-slide-up">
@@ -103,7 +109,7 @@ const ServicesOverview = () => {
                     <div className="relative overflow-hidden rounded-t-lg h-48">
                       <img 
                         src={service.image} 
-                        alt={service.title}
+                        alt={service.altText}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
@@ -111,7 +117,7 @@ const ServicesOverview = () => {
                         <div className="p-2 bg-white/20 backdrop-blur-sm rounded-lg">
                           <IconComponent className="w-5 h-5 text-white" />
                         </div>
-                        <h3 className="text-white font-heading font-bold text-xl line-clamp-1">
+                        <h3 className="text-white font-din font-bold text-xl line-clamp-1">
                           {service.title}
                         </h3>
                       </div>
@@ -158,7 +164,7 @@ const ServicesOverview = () => {
       {/* Call to Action */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-din font-bold text-foreground mb-4">
             Ready to Get Started?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">

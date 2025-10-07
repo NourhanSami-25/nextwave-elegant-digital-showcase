@@ -8,49 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* NextWave Design System - Elegant & Feminine */
-    --background: 30 43% 97%; /* Warm Ivory */
-    --foreground: 294 23% 21%; /* Espresso */
+    /* NextWave Design System - Soft Minimal Dark Luxury */
+    --background: 0 0% 10%; /* Deep Charcoal #1A1A1A */
+    --foreground: 30 43% 97%; /* Warm Ivory #FBF8F5 */
 
-    --card: 30 43% 97%;
-    --card-foreground: 294 23% 21%;
+    --card: 0 0% 12%; /* Slightly lighter charcoal for cards */
+    --card-foreground: 30 43% 97%; /* Warm Ivory */
 
-    --popover: 30 43% 99%;
-    --popover-foreground: 294 23% 21%;
+    --popover: 0 0% 8%; /* Darker for popovers */
+    --popover-foreground: 30 43% 97%; /* Warm Ivory */
 
     /* Primary - Dusty Mauve */
-    --primary: 330 26% 52%;
-    --primary-foreground: 30 43% 97%;
+    --primary: 330 26% 52%; /* Dusty Mauve #A06C83 */
+    --primary-foreground: 30 43% 97%; /* Warm Ivory */
 
-    /* Secondary - Soft variation */
-    --secondary: 330 20% 88%;
-    --secondary-foreground: 294 23% 21%;
+    /* Secondary - Subtle variation */
+    --secondary: 0 0% 15%; /* Darker charcoal variation */
+    --secondary-foreground: 30 43% 97%; /* Warm Ivory */
 
     /* Muted tones */
-    --muted: 330 15% 92%;
-    --muted-foreground: 294 15% 45%;
+    --muted: 0 0% 18%; /* Muted charcoal */
+    --muted-foreground: 30 20% 75%; /* Muted ivory */
 
     /* Accent - Champagne Gold */
-    --accent: 38 61% 76%;
-    --accent-foreground: 294 23% 21%;
+    --accent: 38 61% 76%; /* Champagne Gold #E8C39E */
+    --accent-foreground: 0 0% 10%; /* Deep Charcoal */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 30 43% 97%;
 
-    --border: 330 15% 88%;
-    --input: 330 15% 92%;
-    --ring: 330 26% 52%;
+    --border: 0 0% 20%; /* Subtle border */
+    --input: 0 0% 15%; /* Input background */
+    --ring: 330 26% 52%; /* Dusty Mauve for focus rings */
 
     --radius: 0.75rem;
 
     /* Custom gradient for premium effects */
     --gradient-primary: linear-gradient(135deg, hsl(330 26% 52%) 0%, hsl(38 61% 76%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(30 43% 99%) 0%, hsl(30 43% 97%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 8%) 0%, hsl(0 0% 12%) 100%);
     
-    /* Elegant shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(330 26% 52% / 0.1);
-    --shadow-elegant: 0 10px 40px -10px hsl(330 26% 52% / 0.15);
-    --shadow-glow: 0 0 30px hsl(38 61% 76% / 0.3);
+    /* Elegant shadows with luxury feel */
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-elegant: 0 10px 40px -10px hsl(0 0% 0% / 0.4);
+    --shadow-glow: 0 0 30px hsl(38 61% 76% / 0.2);
     
     /* Smooth transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -58,42 +58,41 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 294 25% 12%; /* Deep Espresso */
+    /* Dark mode uses the same luxury theme */
+    --background: 0 0% 10%; /* Deep Charcoal */
     --foreground: 30 43% 97%; /* Warm Ivory */
 
-    --card: 294 25% 15%;
+    --card: 0 0% 12%;
     --card-foreground: 30 43% 97%;
 
-    --popover: 294 25% 10%;
+    --popover: 0 0% 8%;
     --popover-foreground: 30 43% 97%;
 
-    /* Primary - Lighter Mauve for dark mode */
-    --primary: 330 35% 65%;
-    --primary-foreground: 294 25% 12%;
+    --primary: 330 26% 52%; /* Dusty Mauve */
+    --primary-foreground: 30 43% 97%;
 
-    --secondary: 294 20% 20%;
+    --secondary: 0 0% 15%;
     --secondary-foreground: 30 43% 97%;
 
-    --muted: 294 20% 18%;
-    --muted-foreground: 330 15% 70%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 30 20% 75%;
 
-    /* Accent - Brighter Gold for dark mode */
-    --accent: 38 70% 70%;
-    --accent-foreground: 294 25% 12%;
+    --accent: 38 61% 76%; /* Champagne Gold */
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 30 43% 97%;
 
-    --border: 294 20% 22%;
-    --input: 294 20% 18%;
-    --ring: 330 35% 65%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 330 26% 52%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(330 35% 65%) 0%, hsl(38 70% 70%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(294 25% 12%) 0%, hsl(294 25% 10%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(330 26% 52%) 0%, hsl(38 61% 76%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 8%) 0%, hsl(0 0% 12%) 100%);
     
-    --shadow-soft: 0 4px 20px -4px hsl(330 35% 65% / 0.2);
-    --shadow-elegant: 0 10px 40px -10px hsl(330 35% 65% / 0.25);
-    --shadow-glow: 0 0 40px hsl(38 70% 70% / 0.4);
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.4);
+    --shadow-elegant: 0 10px 40px -10px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 40px hsl(38 61% 76% / 0.3);
   }
 }
 
@@ -103,7 +102,7 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-body antialiased;
+    @apply bg-background text-foreground font-din antialiased;
   }
 
   html {
@@ -111,7 +110,7 @@ All colors MUST be HSL.
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading;
+    @apply font-din;
   }
 }
 
@@ -223,66 +222,7 @@ All colors MUST be HSL.
   }
 }
 
-/* RTL Support for Arabic */
-.rtl {
-  direction: rtl;
-}
 
-.rtl .text-left {
-  text-align: right;
-}
-
-.rtl .text-right {
-  text-align: left;
-}
-
-.rtl .ml-auto {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.rtl .mr-auto {
-  margin-right: 0;
-  margin-left: auto;
-}
-
-.rtl .pl-4 {
-  padding-left: 0;
-  padding-right: 1rem;
-}
-
-.rtl .pr-4 {
-  padding-right: 0;
-  padding-left: 1rem;
-}
-
-.rtl .flex-row {
-  flex-direction: row-reverse;
-}
-
-/* RTL specific navigation adjustments */
-.rtl .justify-between {
-  flex-direction: row-reverse;
-}
-
-.rtl .space-x-4 > * + * {
-  margin-left: 0;
-  margin-right: 1rem;
-}
-
-.rtl .space-x-6 > * + * {
-  margin-left: 0;
-  margin-right: 1.5rem;
-}
-
-/* RTL button and icon adjustments */
-.rtl .group-hover\:translate-x-1 {
-  transform: translateX(-0.25rem);
-}
-
-.rtl .hover\:translate-x-1:hover {
-  transform: translateX(-0.25rem);
-}
 
 /* Line clamp utilities for text truncation */
 .line-clamp-1 {

@@ -190,7 +190,7 @@ const ServicePage = () => {
 
       <section className="container mx-auto px-4 pt-28 pb-16">
         <div className="mb-10 text-center">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground">
+          <h1 className="text-4xl md:text-5xl font-din font-bold text-foreground">
             {service?.title ?? "Services"}
           </h1>
           <p className="mt-3 text-muted-foreground">Explore featured projects for this service</p>
@@ -224,7 +224,7 @@ const ServicePage = () => {
                       <div className="flex items-center gap-3">
                         <div className="w-2 h-8 bg-gradient-to-b from-primary to-accent rounded-full"></div>
                         <div>
-                          <DialogTitle className="text-3xl font-heading font-bold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
+                          <DialogTitle className="text-3xl font-din font-bold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
                             {p.title}
                           </DialogTitle>
                           <DialogDescription className="mt-1">
@@ -285,7 +285,7 @@ const ServicePage = () => {
                     <div className="relative h-full">
                       <Separator orientation="vertical" className="h-full" />
                       <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 bg-background border border-border rounded-full px-4 py-2 shadow-soft">
-                        <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent font-heading font-bold">
+                        <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent font-din font-bold">
                           NextWave
                         </span>
                       </div>

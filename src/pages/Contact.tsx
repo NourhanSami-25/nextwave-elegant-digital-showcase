@@ -120,7 +120,7 @@ const Contact = () => {
         <div className="relative max-w-7xl mx-auto px-4 text-center">
 
           
-          <h1 className="text-5xl md:text-7xl font-heading font-bold text-background mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-din font-bold text-background mb-6 leading-tight">
             Get In <span className="bg-gradient-to-r from-accent via-background to-accent bg-clip-text text-transparent">Touch</span>
           </h1>
           
@@ -165,7 +165,7 @@ const Contact = () => {
                     <div className="w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-xl flex items-center justify-center">
                       <Mail className="w-6 h-6 text-primary-foreground" />
                     </div>
-                    <h2 className="text-3xl font-heading font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                    <h2 className="text-3xl font-din font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                       Send us a Message
                     </h2>
                   </div>

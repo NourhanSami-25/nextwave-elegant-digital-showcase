@@ -31,7 +31,7 @@ const NotFound = () => {
           <div className="max-w-2xl mx-auto text-center">
             {/* 404 Animation */}
             <div className="mb-8 animate-fade-in">
-              <h1 className="text-8xl md:text-9xl font-heading font-bold text-primary/20 mb-4">
+              <h1 className="text-8xl md:text-9xl font-din font-bold text-primary/20 mb-4">
                 404
               </h1>
               <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
@@ -39,7 +39,7 @@ const NotFound = () => {
 
             {/* Error Message */}
             <div className="mb-8 animate-slide-up">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+              <h2 className="text-3xl md:text-4xl font-din font-bold text-foreground mb-4">
                 Page Not Found
               </h2>
               <p className="text-lg text-muted-foreground mb-2">

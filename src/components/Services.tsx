@@ -1,47 +1,51 @@
 import { useState, useEffect } from "react";
 import { Camera, Palette, Globe, Megaphone, Sparkles } from "lucide-react";
 import CameraMockup from "./CameraMockup";
-// Using local high-quality PNG images
-import serviceAdvertising from '../assets/advertising-campaign.png';
-import serviceBranding from '../assets/brand-identity.png';
-import serviceWebsite from '../assets/responsive-website.png';
-import servicePhotography from '../assets/product-photography.png';
-import { useLanguage } from "@/contexts/LanguageContext";
+// Using real professional photos
+import serviceAdvertising from '../assets/service-ads.jpg';
+import serviceBranding from '../assets/service-branding.jpg';
+import serviceWebsite from '../assets/service-web.jpg';
+import serviceLogoDesign from '../assets/service-branding.jpg'; // Using branding photo for logo design
+import servicePhotography from '../assets/service-photography.jpg';
 
 export const Services = () => {
-  const { t } = useLanguage();
   const [activeIndex, setActiveIndex] = useState(0);
 
   const services = [
     {
       icon: Megaphone,
-      title: t('services.advertising.title'),
-      description: t('services.advertising.description'),
+      title: "Advertising",
+      description: "Strategic advertising campaigns that capture attention and drive results. We create compelling narratives that resonate with your target audience across all platforms.",
       image: serviceAdvertising,
+      altText: "Real advertising and marketing workspace photo showing creative team collaboration and campaign development",
     },
     {
       icon: Palette,
-      title: t('services.branding.title'),
-      description: t('services.branding.description'),
+      title: "Branding",
+      description: "Complete brand identity solutions that tell your story. From concept to execution, we craft memorable brands that stand out in the marketplace.",
       image: serviceBranding,
+      altText: "Professional branding design studio photo with real design tools, color materials, and creative workspace",
     },
     {
       icon: Globe,
-      title: t('services.websiteDesign.title'),
-      description: t('services.websiteDesign.description'),
+      title: "Website Design",
+      description: "Modern, responsive websites that deliver exceptional user experiences. We combine beautiful design with powerful functionality to create digital experiences that convert.",
       image: serviceWebsite,
+      altText: "Real web development workspace photo showing laptops, code, and responsive design development",
     },
     {
       icon: Sparkles,
-      title: t('services.logoDesign.title'),
-      description: t('services.logoDesign.description'),
-      image: serviceBranding,
+      title: "Logo Design",
+      description: "Distinctive logos that become the face of your brand. We create timeless designs that communicate your values and make lasting impressions.",
+      image: serviceLogoDesign,
+      altText: "Professional logo design studio photo featuring real design tools, sketches, and branding materials",
     },
     {
       icon: Camera,
-      title: t('services.photography.title'),
-      description: t('services.photography.description'),
+      title: "Photography",
+      description: "Professional photography that captures your brand's essence. From product shots to corporate portraits, we create images that tell your story beautifully.",
       image: servicePhotography,
+      altText: "Real professional photography studio photo with camera equipment, lighting setup, and editing workspace",
     },
   ];
 
@@ -60,11 +64,11 @@ export const Services = () => {
     <section id="services" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
-            {t('services.title')}
+          <h2 className="text-4xl md:text-5xl font-din font-bold text-foreground mb-4">
+            Our Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t('services.subtitle')}
+            Comprehensive digital solutions tailored to elevate your brand and drive meaningful results
           </p>
         </div>
 
@@ -74,7 +78,7 @@ export const Services = () => {
             <div className="relative">
                 <CameraMockup
                   image={activeService.image}
-                  alt={activeService.title}
+                  alt={activeService.altText}
                   className="transform transition-all duration-700 hover:scale-105 hover:rotate-1"
                 />
               
@@ -120,7 +124,7 @@ export const Services = () => {
                 <div className="p-4 rounded-xl bg-primary/10 text-primary shadow-soft">
                   <Icon className="w-8 h-8" />
                 </div>
-                <h3 className="text-3xl font-heading font-semibold text-foreground">
+                <h3 className="text-3xl font-din font-semibold text-foreground">
                   {activeService.title}
                 </h3>
               </div>

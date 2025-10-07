@@ -1,0 +1,252 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0.1"/>
+    </linearGradient>
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1f2937;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="logoGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="logoGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Desk Surface -->
+  <rect x="50" y="400" width="700" height="150" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" rx="8"/>
+  
+  <!-- Large Monitor with Logo Design Software -->
+  <g transform="translate(180, 150)">
+    <!-- Monitor Stand -->
+    <rect x="200" y="220" width="50" height="80" fill="#6b7280" rx="4"/>
+    <rect x="175" y="295" width="100" height="20" fill="#6b7280" rx="10"/>
+    
+    <!-- Monitor Frame -->
+    <rect x="0" y="0" width="450" height="300" fill="#1f2937" rx="12"/>
+    <rect x="15" y="15" width="420" height="270" fill="url(#screenGradient)" rx="8"/>
+    
+    <!-- Design Software Interface -->
+    <!-- Top Menu Bar -->
+    <rect x="25" y="25" width="400" height="25" fill="#374151" rx="4"/>
+    <rect x="35" y="32" width="30" height="8" fill="#6b7280" rx="2"/>
+    <rect x="75" y="32" width="25" height="8" fill="#6b7280" rx="2"/>
+    <rect x="110" y="32" width="30" height="8" fill="#6b7280" rx="2"/>
+    
+    <!-- Tool Palette -->
+    <rect x="25" y="60" width="40" height="200" fill="#2d3748" rx="4"/>
+    
+    <!-- Tools -->
+    <rect x="30" y="70" width="30" height="15" fill="#4a5568" rx="2"/>
+    <rect x="35" y="75" width="20" height="5" fill="#8b5cf6" rx="1"/>
+    
+    <rect x="30" y="90" width="30" height="15" fill="#4a5568" rx="2"/>
+    <circle cx="45" cy="97" r="4" fill="#f59e0b"/>
+    
+    <rect x="30" y="110" width="30" height="15" fill="#4a5568" rx="2"/>
+    <rect x="35" y="115" width="20" height="5" fill="#10b981" rx="1"/>
+    
+    <rect x="30" y="130" width="30" height="15" fill="#4a5568" rx="2"/>
+    <polygon points="40,135 50,135 45,142" fill="#ef4444"/>
+    
+    <!-- Main Canvas -->
+    <rect x="75" y="60" width="340" height="200" fill="#ffffff" rx="4"/>
+    
+    <!-- Logo Design Grid -->
+    <g stroke="#e5e7eb" stroke-width="0.5" opacity="0.3">
+      <line x1="195" y1="60" x2="195" y2="260"/>
+      <line x1="255" y1="60" x2="255" y2="260"/>
+      <line x1="315" y1="60" x2="315" y2="260"/>
+      <line x1="75" y1="120" x2="415" y2="120"/>
+      <line x1="75" y1="160" x2="415" y2="160"/>
+      <line x1="75" y1="200" x2="415" y2="200"/>
+    </g>
+    
+    <!-- Logo Concepts -->
+    <!-- Concept 1 - Geometric -->
+    <g transform="translate(100, 80)">
+      <rect x="0" y="0" width="80" height="60" fill="#f8fafc" stroke="#e5e7eb" stroke-width="1" rx="4"/>
+      <circle cx="40" cy="30" r="15" fill="url(#logoGradient1)"/>
+      <rect x="30" y="35" width="20" height="8" fill="url(#logoGradient1)" rx="2"/>
+      <text x="40" y="55" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="6">CONCEPT A</text>
+    </g>
+    
+    <!-- Concept 2 - Typography -->
+    <g transform="translate(200, 80)">
+      <rect x="0" y="0" width="80" height="60" fill="#f8fafc" stroke="#e5e7eb" stroke-width="1" rx="4"/>
+      <text x="40" y="25" text-anchor="middle" fill="#8b5cf6" font-family="Arial, sans-serif" font-size="14" font-weight="bold">LOGO</text>
+      <rect x="20" y="30" width="40" height="2" fill="#8b5cf6"/>
+      <text x="40" y="55" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="6">CONCEPT B</text>
+    </g>
+    
+    <!-- Concept 3 - Icon + Text -->
+    <g transform="translate(300, 80)">
+      <rect x="0" y="0" width="80" height="60" fill="#f8fafc" stroke="#e5e7eb" stroke-width="1" rx="4"/>
+      <rect x="15" y="15" width="15" height="15" fill="url(#logoGradient2)" rx="3"/>
+      <circle cx="22.5" cy="22.5" r="4" fill="#ffffff"/>
+      <text x="45" y="25" text-anchor="middle" fill="#1f2937" font-family="Arial, sans-serif" font-size="8" font-weight="bold">BRAND</text>
+      <text x="40" y="55" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="6">CONCEPT C</text>
+    </g>
+    
+    <!-- Selected Logo - Large Version -->
+    <g transform="translate(120, 150)">
+      <rect x="0" y="0" width="120" height="80" fill="#ffffff" stroke="#8b5cf6" stroke-width="2" rx="6"/>
+      <circle cx="60" cy="40" r="20" fill="url(#logoGradient1)"/>
+      <rect x="45" y="45" width="30" height="10" fill="url(#logoGradient1)" rx="3"/>
+      <text x="60" y="70" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="8">SELECTED DESIGN</text>
+    </g>
+    
+    <!-- Properties Panel -->
+    <rect x="25" y="270" width="400" height="15" fill="#2d3748" rx="2"/>
+    <rect x="35" y="275" width="60" height="5" fill="#6b7280" rx="1"/>
+    <rect x="105" y="275" width="40" height="5" fill="#6b7280" rx="1"/>
+    <rect x="155" y="275" width="50" height="5" fill="#6b7280" rx="1"/>
+  </g>
+  
+  <!-- Graphics Tablet with Stylus -->
+  <g transform="translate(100, 420)">
+    <rect x="0" y="0" width="160" height="120" fill="#374151" rx="8"/>
+    <rect x="10" y="10" width="140" height="100" fill="#1f2937" rx="4"/>
+    
+    <!-- Active Drawing Area -->
+    <rect x="20" y="20" width="120" height="80" fill="#2d3748" rx="4"/>
+    
+    <!-- Logo Sketch -->
+    <circle cx="80" cy="60" r="18" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+    <path d="M65 45 Q80 35 95 45" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+    <path d="M65 75 Q80 85 95 75" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+    <rect x="70" y="65" width="20" height="8" fill="none" stroke="#8b5cf6" stroke-width="2" rx="2"/>
+    
+    <!-- Stylus -->
+    <rect x="170" y="40" width="4" height="50" fill="#9ca3af" rx="2"/>
+    <circle cx="172" cy="35" r="3" fill="#6b7280"/>
+    <rect x="170" y="90" width="4" height="8" fill="#1f2937" rx="2"/>
+  </g>
+  
+  <!-- Logo Variations Sheet -->
+  <g transform="translate(400, 480)">
+    <rect x="0" y="0" width="140" height="100" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" rx="4"/>
+    <text x="70" y="15" text-anchor="middle" fill="#1f2937" font-family="Arial, sans-serif" font-size="10" font-weight="bold">LOGO VARIATIONS</text>
+    
+    <!-- Full Color Version -->
+    <rect x="15" y="25" width="50" height="30" fill="#f8fafc" stroke="#e5e7eb" stroke-width="1" rx="2"/>
+    <circle cx="40" cy="35" r="6" fill="#8b5cf6"/>
+    <rect x="35" y="40" width="10" height="4" fill="#8b5cf6" rx="1"/>
+    <text x="40" y="50" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="5">FULL COLOR</text>
+    
+    <!-- Monochrome Version -->
+    <rect x="75" y="25" width="50" height="30" fill="#f8fafc" stroke="#e5e7eb" stroke-width="1" rx="2"/>
+    <circle cx="100" cy="35" r="6" fill="#1f2937"/>
+    <rect x="95" y="40" width="10" height="4" fill="#1f2937" rx="1"/>
+    <text x="100" y="50" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="5">MONOCHROME</text>
+    
+    <!-- Icon Only -->
+    <rect x="15" y="60" width="50" height="30" fill="#f8fafc" stroke="#e5e7eb" stroke-width="1" rx="2"/>
+    <circle cx="40" cy="75" r="8" fill="#8b5cf6"/>
+    <text x="40" y="87" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="5">ICON ONLY</text>
+    
+    <!-- Reversed -->
+    <rect x="75" y="60" width="50" height="30" fill="#1f2937" stroke="#374151" stroke-width="1" rx="2"/>
+    <circle cx="100" cy="75" r="6" fill="#ffffff"/>
+    <rect x="95" y="80" width="10" height="4" fill="#ffffff" rx="1"/>
+    <text x="100" y="87" text-anchor="middle" fill="#9ca3af" font-family="Arial, sans-serif" font-size="5">REVERSED</text>
+  </g>
+  
+  <!-- Color Palette -->
+  <g transform="translate(600, 450)">
+    <rect x="0" y="0" width="120" height="80" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" rx="4"/>
+    <text x="60" y="15" text-anchor="middle" fill="#1f2937" font-family="Arial, sans-serif" font-size="10" font-weight="bold">BRAND COLORS</text>
+    
+    <!-- Primary Colors -->
+    <circle cx="30" cy="35" r="12" fill="#8b5cf6"/>
+    <text x="30" y="52" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="6">PRIMARY</text>
+    
+    <circle cx="60" cy="35" r="12" fill="#f59e0b"/>
+    <text x="60" y="52" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="6">ACCENT</text>
+    
+    <circle cx="90" cy="35" r="12" fill="#1f2937"/>
+    <text x="90" y="52" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="6">NEUTRAL</text>
+    
+    <!-- Color Codes -->
+    <text x="30" y="65" text-anchor="middle" fill="#6b7280" font-family="monospace" font-size="5">#8B5CF6</text>
+    <text x="60" y="65" text-anchor="middle" fill="#6b7280" font-family="monospace" font-size="5">#F59E0B</text>
+    <text x="90" y="65" text-anchor="middle" fill="#6b7280" font-family="monospace" font-size="5">#1F2937</text>
+  </g>
+  
+  <!-- Design Tools -->
+  <g transform="translate(680, 520)">
+    <!-- Compass -->
+    <circle cx="15" cy="15" r="12" fill="none" stroke="#6b7280" stroke-width="2"/>
+    <line x1="15" y1="8" x2="15" y2="22" stroke="#6b7280" stroke-width="1"/>
+    <circle cx="15" cy="15" r="2" fill="#6b7280"/>
+    
+    <!-- Ruler -->
+    <rect x="35" y="10" width="40" height="6" fill="#e5e7eb" rx="2"/>
+    <rect x="40" y="11" width="1" height="4" fill="#6b7280"/>
+    <rect x="45" y="11" width="1" height="4" fill="#6b7280"/>
+    <rect x="50" y="11" width="1" height="4" fill="#6b7280"/>
+    <rect x="55" y="11" width="1" height="4" fill="#6b7280"/>
+    <rect x="60" y="11" width="1" height="4" fill="#6b7280"/>
+    <rect x="65" y="11" width="1" height="4" fill="#6b7280"/>
+    <rect x="70" y="11" width="1" height="4" fill="#6b7280"/>
+    
+    <!-- Pencils -->
+    <rect x="10" y="25" width="3" height="30" fill="#fbbf24" rx="1"/>
+    <polygon points="10,55 13,55 11.5,60" fill="#1f2937"/>
+    
+    <rect x="20" y="30" width="3" height="25" fill="#ef4444" rx="1"/>
+    <polygon points="20,55 23,55 21.5,60" fill="#1f2937"/>
+  </g>
+  
+  <!-- Floating Logo Elements -->
+  <g opacity="0.6">
+    <!-- Geometric Shapes -->
+    <g transform="translate(80, 200)">
+      <circle cx="15" cy="15" r="10" fill="#8b5cf6" opacity="0.7"/>
+      <rect x="35" y="5" width="20" height="20" fill="#f59e0b" opacity="0.7" rx="4"/>
+      <polygon points="75,5 85,25 65,25" fill="#10b981" opacity="0.7"/>
+    </g>
+    
+    <!-- Typography Elements -->
+    <g transform="translate(600, 200)">
+      <text x="0" y="0" fill="#8b5cf6" font-family="Arial, sans-serif" font-size="20" font-weight="bold" opacity="0.6">Aa</text>
+      <text x="30" y="0" fill="#f59e0b" font-family="serif" font-size="20" font-style="italic" opacity="0.6">Bb</text>
+      <text x="60" y="0" fill="#1f2937" font-family="monospace" font-size="20" opacity="0.6">Cc</text>
+    </g>
+    
+    <!-- Grid Pattern -->
+    <g transform="translate(350, 50)" opacity="0.3">
+      <rect x="0" y="0" width="100" height="60" fill="none" stroke="#8b5cf6" stroke-width="1"/>
+      <line x1="20" y1="0" x2="20" y2="60" stroke="#8b5cf6" stroke-width="0.5"/>
+      <line x1="40" y1="0" x2="40" y2="60" stroke="#8b5cf6" stroke-width="0.5"/>
+      <line x1="60" y1="0" x2="60" y2="60" stroke="#8b5cf6" stroke-width="0.5"/>
+      <line x1="80" y1="0" x2="80" y2="60" stroke="#8b5cf6" stroke-width="0.5"/>
+      <line x1="0" y1="15" x2="100" y2="15" stroke="#8b5cf6" stroke-width="0.5"/>
+      <line x1="0" y1="30" x2="100" y2="30" stroke="#8b5cf6" stroke-width="0.5"/>
+      <line x1="0" y1="45" x2="100" y2="45" stroke="#8b5cf6" stroke-width="0.5"/>
+    </g>
+  </g>
+  
+  <!-- Coffee Cup -->
+  <g transform="translate(50, 500)">
+    <ellipse cx="15" cy="35" rx="12" ry="2" fill="#d1d5db"/>
+    <rect x="3" y="10" width="24" height="25" fill="#ffffff" rx="12"/>
+    <rect x="5" y="12" width="20" height="21" fill="#8b5cf6" rx="10"/>
+    
+    <!-- Handle -->
+    <path d="M27 20 Q35 20 35 28 Q35 36 27 36" stroke="#e5e7eb" stroke-width="2" fill="none"/>
+    
+    <!-- Steam -->
+    <path d="M12 5 Q14 0 12 -5" stroke="#d1d5db" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M15 7 Q17 2 15 -3" stroke="#d1d5db" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M18 5 Q20 0 18 -5" stroke="#d1d5db" stroke-width="1.5" fill="none" opacity="0.6"/>
+  </g>
+</svg>

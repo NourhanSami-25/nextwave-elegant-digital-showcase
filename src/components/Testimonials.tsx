@@ -57,7 +57,7 @@ export const Testimonials = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-din font-bold text-foreground mb-4">
             What Our Clients Say
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -88,13 +88,13 @@ export const Testimonials = () => {
                       <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-accent rounded-full border-2 border-card"></div>
                     </div>
                     <div>
-                      <h4 className="font-heading font-semibold text-foreground text-sm">{testimonial.name}</h4>
+                      <h4 className="font-din font-semibold text-foreground text-sm">{testimonial.name}</h4>
                       <p className="text-xs text-muted-foreground">{testimonial.role}</p>
                     </div>
                   </div>
 
                   {/* Testimonial Text */}
-                  <p className="text-foreground mb-4 leading-relaxed font-body text-sm">
+                  <p className="text-foreground mb-4 leading-relaxed font-din text-sm">
                     "{testimonial.text}"
                   </p>
 
@@ -130,13 +130,13 @@ export const Testimonials = () => {
                       <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-accent rounded-full border-2 border-card"></div>
                     </div>
                     <div>
-                      <h4 className="font-heading font-semibold text-foreground text-sm">{testimonial.name}</h4>
+                      <h4 className="font-din font-semibold text-foreground text-sm">{testimonial.name}</h4>
                       <p className="text-xs text-muted-foreground">{testimonial.role}</p>
                     </div>
                   </div>
 
                   {/* Testimonial Text */}
-                  <p className="text-foreground mb-4 leading-relaxed font-body text-sm">
+                  <p className="text-foreground mb-4 leading-relaxed font-din text-sm">
                     "{testimonial.text}"
                   </p>
 
@@ -159,7 +159,7 @@ export const Testimonials = () => {
         <div className="text-center mt-16 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 rounded-full border border-primary/20">
             <Star className="w-5 h-5 fill-accent text-accent" />
-            <span className="text-primary font-heading font-semibold">
+            <span className="text-primary font-din font-semibold">
               Trusted by 200+ brands worldwide
             </span>
             <Star className="w-5 h-5 fill-accent text-accent" />

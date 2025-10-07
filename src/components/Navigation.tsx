@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Moon, Sun, Globe, Menu, X } from "lucide-react";
+import { Moon, Sun, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -8,12 +8,9 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useLanguage } from "@/contexts/LanguageContext";
-
 export const Navigation = () => {
   const [isDark, setIsDark] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { language, setLanguage, t } = useLanguage();
   const navigate = useNavigate();
 
   const toggleTheme = () => {
@@ -22,11 +19,11 @@ export const Navigation = () => {
   };
 
   const services = [
-    { key: "advertising", name: t("services.advertising.title") },
-    { key: "branding", name: t("services.branding.title") },
-    { key: "websiteDesign", name: t("services.websiteDesign.title") },
-    { key: "logoDesign", name: t("services.logoDesign.title") },
-    { key: "photography", name: t("services.photography.title") },
+    { key: "advertising", name: "Advertising" },
+    { key: "branding", name: "Branding" },
+    { key: "websiteDesign", name: "Website Design" },
+    { key: "logoDesign", name: "Logo Design" },
+    { key: "photography", name: "Photography" },
   ];
 
   const toSlug = (name: string) =>
@@ -60,7 +57,7 @@ export const Navigation = () => {
           {/* Logo */}
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-2xl font-heading font-bold text-primary hover:opacity-80 transition-smooth"
+            className="text-2xl font-din font-bold text-primary hover:opacity-80 transition-smooth"
           >
             NextWave
           </button>
@@ -71,12 +68,12 @@ export const Navigation = () => {
               onClick={() => scrollToSection("hero")}
               className="text-foreground hover:text-primary transition-smooth font-medium"
             >
-              {t("nav.home")}
+              Home
             </button>
 
             <DropdownMenu>
               <DropdownMenuTrigger className="text-foreground hover:text-primary transition-smooth font-medium">
-                {t("nav.services")}
+                Services
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-popover border-border shadow-elegant">
                 <DropdownMenuItem
@@ -86,7 +83,7 @@ export const Navigation = () => {
                   }}
                   className="cursor-pointer hover:bg-accent transition-smooth font-semibold text-primary border-b border-border"
                 >
-                  {t("nav.viewAllServices")}
+                  View All Services
                 </DropdownMenuItem>
                 {services.map((service) => (
                   <DropdownMenuItem
@@ -107,34 +104,27 @@ export const Navigation = () => {
               onClick={() => navigate("/portfolio")}
               className="text-foreground hover:text-primary transition-smooth font-medium"
             >
-              {t("nav.portfolio")}
+              Portfolio
             </button>
 
             <button
               onClick={() => navigate("/about")}
               className="text-foreground hover:text-primary transition-smooth font-medium"
             >
-              {t("nav.about")}
+              About Us
             </button>
 
             <button
               onClick={() => navigate("/contact")}
               className="text-foreground hover:text-primary transition-smooth font-medium"
             >
-              {t("nav.contact")}
+              Contact
             </button>
           </div>
 
-          {/* Right Section - Language & Theme Toggle */}
+          {/* Right Section - Theme Toggle */}
           <div className="flex items-center gap-2">
             <div className="hidden md:flex items-center rounded-lg border-2 border-border overflow-hidden shadow-soft">
-              <button
-                onClick={() => setLanguage(language === "en" ? "ar" : "en")}
-                className="flex items-center gap-1 px-4 py-2 bg-muted hover:bg-accent transition-smooth text-sm font-medium"
-              >
-                <Globe className="w-4 h-4" />
-                {language === "en" ? "EN" : "AR"}
-              </button>
               <button
                 onClick={toggleTheme}
                 className="flex items-center gap-1 px-4 py-2 bg-muted hover:bg-accent transition-smooth"
@@ -167,7 +157,7 @@ export const Navigation = () => {
                 onClick={() => scrollToSection("hero")}
                 className="text-left text-foreground hover:text-primary transition-smooth font-medium py-2"
               >
-                {t("nav.home")}
+                Home
               </button>
               <button
                 onClick={() => {
@@ -176,7 +166,7 @@ export const Navigation = () => {
                 }}
                 className="text-left text-foreground hover:text-primary transition-smooth font-medium py-2"
               >
-                {t("nav.services")}
+                Services
               </button>
               <button
                 onClick={() => {
@@ -185,7 +175,7 @@ export const Navigation = () => {
                 }}
                 className="text-left text-foreground hover:text-primary transition-smooth font-medium py-2"
               >
-                {t("nav.portfolio")}
+                Portfolio
               </button>
               <button
                 onClick={() => {
@@ -194,7 +184,7 @@ export const Navigation = () => {
                 }}
                 className="text-left text-foreground hover:text-primary transition-smooth font-medium py-2"
               >
-                {t("nav.about")}
+                About Us
               </button>
               <button
                 onClick={() => {
@@ -203,18 +193,10 @@ export const Navigation = () => {
                 }}
                 className="text-left text-foreground hover:text-primary transition-smooth font-medium py-2"
               >
-                {t("nav.contact")}
+                Contact
               </button>
 
               <div className="flex items-center gap-2 pt-2 border-t border-border">
-                <Button
-                  variant="elegant"
-                  size="sm"
-                  onClick={() => setLanguage(language === "en" ? "ar" : "en")}
-                >
-                  <Globe className="w-4 h-4 mr-2" />
-                  {language === "en" ? "EN" : "AR"}
-                </Button>
                 <Button variant="elegant" size="sm" onClick={toggleTheme}>
                   {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
                 </Button>

@@ -134,7 +134,7 @@ const Portfolio = () => {
             <div className="lg:col-span-2 p-8 lg:p-12 flex flex-col justify-center bg-gradient-subtle">
               <div className="space-y-6">
                 <div>
-                  <h2 className="text-4xl font-heading font-bold text-foreground mb-4">
+                  <h2 className="text-4xl font-din font-bold text-foreground mb-4">
                     {selectedItem.name}
                   </h2>
                   <p className="text-lg text-muted-foreground leading-relaxed">
