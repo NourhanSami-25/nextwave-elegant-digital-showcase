@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
-import { BackToTop } from '../components/BackToTop';
+
 import { useLanguage } from '../contexts/LanguageContext';
 
 // Custom hook for intersection observer
@@ -346,7 +346,6 @@ const About = () => {
       </section>
 
       <Footer />
-      <BackToTop />
       
       <style>{`
         @keyframes float {

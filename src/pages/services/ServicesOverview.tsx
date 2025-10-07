@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Palette, Globe, Camera, Megaphone, PenTool } from "lucide-react";

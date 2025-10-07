@@ -40,6 +40,16 @@ export const Navigation = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
       setIsMenuOpen(false);
+    } else {
+      // If element doesn't exist (not on home page), navigate to home first
+      navigate("/");
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+      setIsMenuOpen(false);
     }
   };
 
@@ -160,7 +170,10 @@ export const Navigation = () => {
                 {t("nav.home")}
               </button>
               <button
-                onClick={() => scrollToSection("services")}
+                onClick={() => {
+                  navigate("/services");
+                  setIsMenuOpen(false);
+                }}
                 className="text-left text-foreground hover:text-primary transition-smooth font-medium py-2"
               >
                 {t("nav.services")}

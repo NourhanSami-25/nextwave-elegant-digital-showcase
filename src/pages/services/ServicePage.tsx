@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import {
@@ -218,25 +219,63 @@ const ServicePage = () => {
               <DialogContent className="max-w-5xl p-0 overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr]">
                   {/* Left: Details */}
-                  <div className="p-6">
-                    <DialogHeader>
-                      <DialogTitle className="text-2xl font-heading">{p.title}</DialogTitle>
-                      <DialogDescription>
-                        <span className="text-muted-foreground">{service?.title}</span>
-                      </DialogDescription>
+                  <div className="p-8 bg-gradient-to-br from-background via-background/95 to-muted/20">
+                    <DialogHeader className="space-y-4">
+                      <div className="flex items-center gap-3">
+                        <div className="w-2 h-8 bg-gradient-to-b from-primary to-accent rounded-full"></div>
+                        <div>
+                          <DialogTitle className="text-3xl font-heading font-bold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
+                            {p.title}
+                          </DialogTitle>
+                          <DialogDescription className="mt-1">
+                            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
+                              {service?.title}
+                            </span>
+                          </DialogDescription>
+                        </div>
+                      </div>
                     </DialogHeader>
-                    <div className="mt-4 space-y-3 text-sm">
-                      <div>
-                        <span className="font-medium">Description: </span>
-                        <span className="text-muted-foreground">{p.description}</span>
+                    
+                    <div className="mt-8 space-y-6">
+                      <div className="group">
+                        <div className="flex items-center gap-2 mb-2">
+                          <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
+                          <span className="font-semibold text-foreground text-sm uppercase tracking-wide">Description</span>
+                        </div>
+                        <p className="text-muted-foreground leading-relaxed pl-4 border-l-2 border-muted/30 group-hover:border-primary/30 transition-colors">
+                          {p.description}
+                        </p>
                       </div>
-                      <div>
-                        <span className="font-medium">Purpose: </span>
-                        <span className="text-muted-foreground">{p.purpose}</span>
+                      
+                      <div className="group">
+                        <div className="flex items-center gap-2 mb-2">
+                          <div className="w-1.5 h-1.5 rounded-full bg-accent"></div>
+                          <span className="font-semibold text-foreground text-sm uppercase tracking-wide">Purpose</span>
+                        </div>
+                        <p className="text-muted-foreground leading-relaxed pl-4 border-l-2 border-muted/30 group-hover:border-accent/30 transition-colors">
+                          {p.purpose}
+                        </p>
                       </div>
-                      <div>
-                        <span className="font-medium">Date: </span>
-                        <span className="text-muted-foreground">{p.date}</span>
+                      
+                      <div className="group">
+                        <div className="flex items-center gap-2 mb-2">
+                          <div className="w-1.5 h-1.5 rounded-full bg-primary/60"></div>
+                          <span className="font-semibold text-foreground text-sm uppercase tracking-wide">Project Date</span>
+                        </div>
+                        <p className="text-muted-foreground leading-relaxed pl-4 border-l-2 border-muted/30 group-hover:border-primary/20 transition-colors font-mono">
+                          {new Date(p.date).toLocaleDateString('en-US', { 
+                            year: 'numeric', 
+                            month: 'long', 
+                            day: 'numeric' 
+                          })}
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="mt-8 pt-6 border-t border-muted/20">
+                      <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                        <div className="w-1 h-1 rounded-full bg-primary animate-pulse"></div>
+                        <span>Project showcase by NextWave Digital</span>
                       </div>
                     </div>
                   </div>
@@ -254,8 +293,8 @@ const ServicePage = () => {
                   </div>
 
                   {/* Right: Large image */}
-                  <div className="bg-card p-6 border-l md:border-l-0 md:border-t">
-                    <AspectRatio ratio={16 / 10} className="overflow-hidden rounded-md border">
+                  <div className="bg-card p-6 border-l md:border-l-0 md:border-t flex items-center justify-center">
+                    <AspectRatio ratio={16 / 10} className="overflow-hidden rounded-md border ml-6">
                       <img src={p.image} alt={p.title} className="h-full w-full object-cover" />
                     </AspectRatio>
                   </div>

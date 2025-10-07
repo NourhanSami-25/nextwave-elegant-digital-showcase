@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
-import { BackToTop } from '../components/BackToTop';
+
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
@@ -343,7 +343,6 @@ const Contact = () => {
       </div>
 
       <Footer />
-      <BackToTop />
     </div>
   );
 };

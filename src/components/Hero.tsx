@@ -28,7 +28,7 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-background/70 dark:bg-background/80 backdrop-blur-sm" />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center">
+      <div className="relative z-10 container mx-auto px-4 text-center mt-20">
         <div className="animate-fade-in">
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-heading font-bold mb-6 text-foreground">
             <span className="inline-block transition-elegant hover:scale-110 cursor-default">
@@ -51,7 +51,6 @@ export const Hero = () => {
               className="group"
             >
               {t('hero.buttons.exploreServices')}
-              <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-smooth" />
             </Button>
             <Button
               variant="elegant"
@@ -64,11 +63,11 @@ export const Hero = () => {
               {t('hero.buttons.getInTouch')}
             </Button>
           </div>
-        </div>
 
-        {/* Animated scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <ArrowDown className="w-6 h-6 text-accent" />
+          {/* Animated scroll indicator */}
+          <div className="flex justify-center mt-20 animate-bounce">
+            <ArrowDown className="w-6 h-6 text-accent" />
+          </div>
         </div>
       </div>
     </section>

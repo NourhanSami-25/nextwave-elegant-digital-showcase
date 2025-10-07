@@ -7,13 +7,13 @@ export const BackToTop = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.scrollY > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      const scrollY = window.scrollY;
+      setIsVisible(scrollY > 300);
     };
 
+    // Check initial scroll position
+    toggleVisibility();
+    
     window.addEventListener("scroll", toggleVisibility);
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
@@ -25,19 +25,21 @@ export const BackToTop = () => {
     });
   };
 
+  if (!isVisible) return null;
+
   return (
-    <>
-      {isVisible && (
-        <Button
-          onClick={scrollToTop}
-          variant="gradient"
-          size="icon"
-          className="fixed bottom-8 right-8 z-50 shadow-glow animate-scale-in"
-          aria-label="Back to top"
-        >
-          <ArrowUp className="w-5 h-5" />
-        </Button>
-      )}
-    </>
+    <Button
+      onClick={scrollToTop}
+      variant="gradient"
+      size="icon"
+      className="fixed bottom-8 right-8 z-[9999] shadow-glow animate-scale-in hover:scale-110 transition-all duration-300"
+      aria-label="Back to top"
+      style={{
+        background: 'linear-gradient(135deg, hsl(330 26% 52%) 0%, hsl(38 61% 76%) 100%)',
+        boxShadow: '0 0 30px hsl(38 61% 76% / 0.3), 0 4px 20px -4px hsl(330 26% 52% / 0.3)'
+      }}
+    >
+      <ArrowUp className="w-5 h-5 text-white" />
+    </Button>
   );
 };

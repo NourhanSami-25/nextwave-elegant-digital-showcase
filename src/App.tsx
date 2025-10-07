@@ -14,6 +14,7 @@ import RouteLoader from "./components/RouteLoader";
 import Breadcrumb from "./components/Breadcrumb";
 import PageTransition from "./components/PageTransition";
 import RouteMetadata from "./components/RouteMetadata";
+import { BackToTop } from "./components/BackToTop";
 import { useScrollRestoration } from "./hooks/use-scroll-restoration";
 import { LanguageProvider } from "./contexts/LanguageContext";
 
@@ -50,10 +51,11 @@ const App = () => (
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
-              {/* 404 Route */}
+              {/* Catch-all route for 404 */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </AppLayout>
+          <BackToTop />
         </BrowserRouter>
       </TooltipProvider>
     </LanguageProvider>
