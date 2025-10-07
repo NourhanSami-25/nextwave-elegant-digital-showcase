@@ -15,6 +15,7 @@ import PageTransition from "./components/PageTransition";
 import RouteMetadata from "./components/RouteMetadata";
 import { BackToTop } from "./components/BackToTop";
 import { useScrollRestoration } from "./hooks/use-scroll-restoration";
+import { LanguageProvider } from "./contexts/LanguageContext";
 
 
 const queryClient = new QueryClient();
@@ -36,25 +37,26 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <AppLayout>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/services" element={<ServicesOverview />} />
-            <Route path="/services/:slug" element={<ServicePage />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            {/* Catch-all route for 404 */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </AppLayout>
-        <BackToTop />
-      </BrowserRouter>
-    </TooltipProvider>
+    <LanguageProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <AppLayout>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/services" element={<ServicesOverview />} />
+              <Route path="/services/:slug" element={<ServicePage />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </AppLayout>
+          <BackToTop />
+        </BrowserRouter>
+      </TooltipProvider>
+    </LanguageProvider>
   </QueryClientProvider>
 );
 

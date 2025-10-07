@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Moon, Sun, Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -8,14 +8,14 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useLanguage } from "@/contexts/LanguageContext";
 export const Navigation = () => {
-  const [isDark, setIsDark] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const { language, setLanguage } = useLanguage();
 
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-    document.documentElement.classList.toggle("dark");
+  const toggleLanguage = () => {
+    setLanguage(language === 'en' ? 'ar' : 'en');
   };
 
   const services = [
@@ -122,18 +122,17 @@ export const Navigation = () => {
             </button>
           </div>
 
-          {/* Right Section - Theme Toggle */}
+          {/* Right Section - Language Toggle */}
           <div className="flex items-center gap-2">
-            <div className="hidden md:flex items-center rounded-lg border-2 border-border overflow-hidden shadow-soft">
+            <div className="hidden md:flex items-center rounded-lg border-2 border-champagne-gold/30 overflow-hidden shadow-soft bg-deep-charcoal/10">
               <button
-                onClick={toggleTheme}
-                className="flex items-center gap-1 px-4 py-2 bg-muted hover:bg-accent transition-smooth"
+                onClick={toggleLanguage}
+                className="flex items-center gap-2 px-4 py-2 bg-champagne-gold/10 hover:bg-champagne-gold/20 transition-smooth text-warm-ivory hover:text-champagne-gold"
               >
-                {isDark ? (
-                  <Sun className="w-4 h-4" />
-                ) : (
-                  <Moon className="w-4 h-4" />
-                )}
+                <Globe className="w-4 h-4" />
+                <span className="font-din font-medium text-sm">
+                  {language.toUpperCase()}
+                </span>
               </button>
             </div>
 
@@ -196,9 +195,15 @@ export const Navigation = () => {
                 Contact
               </button>
 
-              <div className="flex items-center gap-2 pt-2 border-t border-border">
-                <Button variant="elegant" size="sm" onClick={toggleTheme}>
-                  {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+              <div className="flex items-center gap-2 pt-2 border-t border-champagne-gold/20">
+                <Button 
+                  variant="elegant" 
+                  size="sm" 
+                  onClick={toggleLanguage}
+                  className="bg-champagne-gold/10 hover:bg-champagne-gold/20 text-warm-ivory hover:text-champagne-gold border-champagne-gold/30"
+                >
+                  <Globe className="w-4 h-4 mr-2" />
+                  {language.toUpperCase()}
                 </Button>
               </div>
             </div>
