@@ -1,0 +1,66 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="adGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#45b7d1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="screenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:0.7" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#adGradient)" opacity="0.1"/>
+  
+  <!-- Main Device (Tablet/Phone) -->
+  <rect x="80" y="40" width="240" height="160" rx="20" fill="#2c3e50" stroke="#34495e" stroke-width="2"/>
+  <rect x="90" y="50" width="220" height="140" rx="10" fill="url(#screenGlow)"/>
+  
+  <!-- Screen Content - Ad Campaign -->
+  <rect x="100" y="60" width="200" height="30" rx="5" fill="#ff6b6b" opacity="0.8"/>
+  <text x="200" y="80" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">SUMMER SALE</text>
+  
+  <!-- Product Images -->
+  <circle cx="130" cy="120" r="20" fill="#4ecdc4" opacity="0.7"/>
+  <circle cx="180" cy="120" r="20" fill="#45b7d1" opacity="0.7"/>
+  <circle cx="230" cy="120" r="20" fill="#f39c12" opacity="0.7"/>
+  <circle cx="270" cy="120" r="20" fill="#e74c3c" opacity="0.7"/>
+  
+  <!-- CTA Button -->
+  <rect x="120" y="150" width="160" height="25" rx="12" fill="#27ae60"/>
+  <text x="200" y="167" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">SHOP NOW</text>
+  
+  <!-- Floating Elements -->
+  <circle cx="50" cy="80" r="8" fill="#ff6b6b" opacity="0.6" filter="url(#glow)"/>
+  <circle cx="350" cy="120" r="6" fill="#4ecdc4" opacity="0.6" filter="url(#glow)"/>
+  <circle cx="60" cy="200" r="5" fill="#45b7d1" opacity="0.6" filter="url(#glow)"/>
+  <circle cx="340" cy="60" r="7" fill="#f39c12" opacity="0.6" filter="url(#glow)"/>
+  
+  <!-- Analytics/Stats -->
+  <rect x="30" y="220" width="80" height="50" rx="8" fill="white" stroke="#e1e8ed" stroke-width="1" opacity="0.9"/>
+  <text x="70" y="235" text-anchor="middle" fill="#2c3e50" font-family="Arial, sans-serif" font-size="8">REACH</text>
+  <text x="70" y="250" text-anchor="middle" fill="#27ae60" font-family="Arial, sans-serif" font-size="12" font-weight="bold">2.5M</text>
+  <text x="70" y="262" text-anchor="middle" fill="#7f8c8d" font-family="Arial, sans-serif" font-size="7">+15%</text>
+  
+  <rect x="290" y="220" width="80" height="50" rx="8" fill="white" stroke="#e1e8ed" stroke-width="1" opacity="0.9"/>
+  <text x="330" y="235" text-anchor="middle" fill="#2c3e50" font-family="Arial, sans-serif" font-size="8">CTR</text>
+  <text x="330" y="250" text-anchor="middle" fill="#e74c3c" font-family="Arial, sans-serif" font-size="12" font-weight="bold">3.2%</text>
+  <text x="330" y="262" text-anchor="middle" fill="#7f8c8d" font-family="Arial, sans-serif" font-size="7">+8%</text>
+  
+  <!-- Megaphone Icon -->
+  <g transform="translate(180, 250)">
+    <path d="M0,0 L20,5 L20,15 L0,20 L0,0 Z" fill="#34495e"/>
+    <circle cx="22" cy="10" r="3" fill="#e74c3c"/>
+    <path d="M25,7 Q30,10 25,13" stroke="#34495e" stroke-width="2" fill="none"/>
+    <path d="M28,5 Q35,10 28,15" stroke="#34495e" stroke-width="2" fill="none"/>
+  </g>
+</svg>

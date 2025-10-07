@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Moon, Sun, Globe, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -7,11 +8,13 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const Navigation = () => {
   const [isDark, setIsDark] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [language, setLanguage] = useState("EN");
+  const { language, setLanguage, t } = useLanguage();
+  const navigate = useNavigate();
 
   const toggleTheme = () => {
     setIsDark(!isDark);
@@ -19,12 +22,18 @@ export const Navigation = () => {
   };
 
   const services = [
-    "Advertising",
-    "Branding",
-    "Website Design",
-    "Logo Design",
-    "Photography",
+    { key: "advertising", name: t("services.advertising.title") },
+    { key: "branding", name: t("services.branding.title") },
+    { key: "websiteDesign", name: t("services.websiteDesign.title") },
+    { key: "logoDesign", name: t("services.logoDesign.title") },
+    { key: "photography", name: t("services.photography.title") },
   ];
+
+  const toSlug = (name: string) =>
+    name
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^a-z0-9-]/g, "");
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -52,45 +61,57 @@ export const Navigation = () => {
               onClick={() => scrollToSection("hero")}
               className="text-foreground hover:text-primary transition-smooth font-medium"
             >
-              Home
+              {t("nav.home")}
             </button>
 
             <DropdownMenu>
               <DropdownMenuTrigger className="text-foreground hover:text-primary transition-smooth font-medium">
-                Services
+                {t("nav.services")}
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-popover border-border shadow-elegant">
+                <DropdownMenuItem
+                  onClick={() => {
+                    navigate('/services');
+                    setIsMenuOpen(false);
+                  }}
+                  className="cursor-pointer hover:bg-accent transition-smooth font-semibold text-primary border-b border-border"
+                >
+                  {t("nav.viewAllServices")}
+                </DropdownMenuItem>
                 {services.map((service) => (
                   <DropdownMenuItem
-                    key={service}
-                    onClick={() => scrollToSection("services")}
+                    key={service.key}
+                    onClick={() => {
+                      navigate(`/services/${toSlug(service.name)}`);
+                      setIsMenuOpen(false);
+                    }}
                     className="cursor-pointer hover:bg-accent transition-smooth"
                   >
-                    {service}
+                    {service.name}
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
 
             <button
-              onClick={() => scrollToSection("portfolio")}
+              onClick={() => navigate("/portfolio")}
               className="text-foreground hover:text-primary transition-smooth font-medium"
             >
-              Portfolio
+              {t("nav.portfolio")}
             </button>
 
             <button
-              onClick={() => scrollToSection("about")}
+              onClick={() => navigate("/about")}
               className="text-foreground hover:text-primary transition-smooth font-medium"
             >
-              About Us
+              {t("nav.about")}
             </button>
 
             <button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => navigate("/contact")}
               className="text-foreground hover:text-primary transition-smooth font-medium"
             >
-              Contact
+              {t("nav.contact")}
             </button>
           </div>
 
@@ -98,11 +119,11 @@ export const Navigation = () => {
           <div className="flex items-center gap-2">
             <div className="hidden md:flex items-center rounded-lg border-2 border-border overflow-hidden shadow-soft">
               <button
-                onClick={() => setLanguage(language === "EN" ? "AR" : "EN")}
+                onClick={() => setLanguage(language === "en" ? "ar" : "en")}
                 className="flex items-center gap-1 px-4 py-2 bg-muted hover:bg-accent transition-smooth text-sm font-medium"
               >
                 <Globe className="w-4 h-4" />
-                {language}
+                {language === "en" ? "EN" : "AR"}
               </button>
               <button
                 onClick={toggleTheme}
@@ -136,41 +157,50 @@ export const Navigation = () => {
                 onClick={() => scrollToSection("hero")}
                 className="text-left text-foreground hover:text-primary transition-smooth font-medium py-2"
               >
-                Home
+                {t("nav.home")}
               </button>
               <button
                 onClick={() => scrollToSection("services")}
                 className="text-left text-foreground hover:text-primary transition-smooth font-medium py-2"
               >
-                Services
+                {t("nav.services")}
               </button>
               <button
-                onClick={() => scrollToSection("portfolio")}
+                onClick={() => {
+                  navigate("/portfolio");
+                  setIsMenuOpen(false);
+                }}
                 className="text-left text-foreground hover:text-primary transition-smooth font-medium py-2"
               >
-                Portfolio
+                {t("nav.portfolio")}
               </button>
               <button
-                onClick={() => scrollToSection("about")}
+                onClick={() => {
+                  navigate("/about");
+                  setIsMenuOpen(false);
+                }}
                 className="text-left text-foreground hover:text-primary transition-smooth font-medium py-2"
               >
-                About Us
+                {t("nav.about")}
               </button>
               <button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => {
+                  navigate("/contact");
+                  setIsMenuOpen(false);
+                }}
                 className="text-left text-foreground hover:text-primary transition-smooth font-medium py-2"
               >
-                Contact
+                {t("nav.contact")}
               </button>
 
               <div className="flex items-center gap-2 pt-2 border-t border-border">
                 <Button
                   variant="elegant"
                   size="sm"
-                  onClick={() => setLanguage(language === "EN" ? "AR" : "EN")}
+                  onClick={() => setLanguage(language === "en" ? "ar" : "en")}
                 >
                   <Globe className="w-4 h-4 mr-2" />
-                  {language}
+                  {language === "en" ? "EN" : "AR"}
                 </Button>
                 <Button variant="elegant" size="sm" onClick={toggleTheme}>
                   {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}

@@ -151,7 +151,7 @@ export const Footer = () => {
 
         {/* Copyright */}
         <div className="pt-8 border-t border-background/20 text-center text-background/60">
-          <p>© 2024 NextWave. All rights reserved. Crafted with elegance.</p>
+          <p>© 2025 NextWave. All rights reserved. Crafted with elegance.</p>
         </div>
       </div>
     </footer>

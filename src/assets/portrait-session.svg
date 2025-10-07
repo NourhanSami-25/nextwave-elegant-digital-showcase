@@ -1,0 +1,214 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="studioGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cameraGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#374151;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1f2937;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="spotlightGlow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f1f5f9"/>
+  
+  <!-- Studio backdrop -->
+  <rect x="50" y="50" width="300" height="200" rx="8" fill="url(#studioGradient)"/>
+  
+  <!-- Studio lighting setup -->
+  <g transform="translate(80, 80)">
+    <!-- Main softbox light -->
+    <rect x="0" y="0" width="30" height="40" rx="4" fill="white" stroke="#d1d5db" stroke-width="2"/>
+    <rect x="5" y="5" width="20" height="30" rx="2" fill="url(#lightGradient)" opacity="0.3"/>
+    <circle cx="15" cy="20" r="8" fill="url(#lightGradient)" opacity="0.6"/>
+    <circle cx="15" cy="20" r="4" fill="white"/>
+    
+    <!-- Light stand -->
+    <rect x="13" y="40" width="4" height="60" fill="#6b7280"/>
+    <rect x="8" y="95" width="14" height="8" rx="4" fill="#374151"/>
+    
+    <!-- Light rays -->
+    <g opacity="0.4">
+      <polygon points="15,20 80,60 80,100 15,60" fill="url(#lightGradient)" opacity="0.2"/>
+      <polygon points="15,20 120,40 120,120 15,80" fill="url(#lightGradient)" opacity="0.1"/>
+    </g>
+  </g>
+  
+  <!-- Fill light -->
+  <g transform="translate(280, 100)">
+    <rect x="0" y="0" width="25" height="30" rx="3" fill="white" stroke="#d1d5db"/>
+    <rect x="3" y="3" width="19" height="24" rx="2" fill="url(#lightGradient)" opacity="0.2"/>
+    <circle cx="12.5" cy="15" r="6" fill="url(#lightGradient)" opacity="0.4"/>
+    <circle cx="12.5" cy="15" r="3" fill="white"/>
+    
+    <!-- Light stand -->
+    <rect x="10" y="30" width="3" height="40" fill="#6b7280"/>
+    <rect x="6" y="65" width="11" height="6" rx="3" fill="#374151"/>
+    
+    <!-- Soft fill light -->
+    <polygon points="12.5,15 50,80 80,120 12.5,45" fill="url(#lightGradient)" opacity="0.1"/>
+  </g>
+  
+  <!-- Portrait subject silhouette -->
+  <g transform="translate(180, 120)">
+    <!-- Head and shoulders -->
+    <ellipse cx="20" cy="30" rx="12" ry="15" fill="#64748b" opacity="0.7"/>
+    <rect x="8" y="40" width="24" height="35" rx="6" fill="#64748b" opacity="0.7"/>
+    
+    <!-- Highlight from main light -->
+    <ellipse cx="16" cy="25" rx="6" ry="8" fill="white" opacity="0.3"/>
+    <rect x="10" y="35" width="12" height="20" rx="3" fill="white" opacity="0.2"/>
+  </g>
+  
+  <!-- Camera setup -->
+  <g transform="translate(120, 180)">
+    <!-- Camera body -->
+    <rect x="0" y="0" width="40" height="25" rx="4" fill="url(#cameraGradient)"/>
+    <rect x="5" y="5" width="30" height="15" rx="2" fill="#1f2937"/>
+    
+    <!-- Lens -->
+    <circle cx="20" cy="12.5" r="8" fill="url(#cameraGradient)"/>
+    <circle cx="20" cy="12.5" r="6" fill="#374151"/>
+    <circle cx="20" cy="12.5" r="4" fill="#1f2937"/>
+    <circle cx="20" cy="12.5" r="2" fill="#000000"/>
+    
+    <!-- Camera details -->
+    <rect x="32" y="3" width="6" height="4" rx="1" fill="#ef4444"/>
+    <rect x="2" y="22" width="8" height="3" rx="1" fill="#6b7280"/>
+    <rect x="30" y="22" width="8" height="3" rx="1" fill="#6b7280"/>
+    
+    <!-- Tripod -->
+    <rect x="18" y="25" width="4" height="30" fill="#374151"/>
+    <polygon points="20,55 10,65 30,65" fill="#1f2937"/>
+  </g>
+  
+  <!-- Reflector -->
+  <g transform="translate(250, 160)">
+    <ellipse cx="15" cy="20" rx="12" ry="25" fill="white" stroke="#d1d5db" stroke-width="2"/>
+    <ellipse cx="15" cy="20" rx="8" ry="20" fill="#f8fafc"/>
+    
+    <!-- Reflector stand -->
+    <rect x="13" y="45" width="4" height="25" fill="#6b7280"/>
+    <rect x="8" y="65" width="14" height="6" rx="3" fill="#374151"/>
+    
+    <!-- Reflected light -->
+    <polygon points="15,20 80,100 100,140 15,45" fill="white" opacity="0.2"/>
+  </g>
+  
+  <!-- Photography equipment -->
+  <g transform="translate(50, 220)">
+    <!-- Camera bag -->
+    <rect x="0" y="0" width="30" height="20" rx="4" fill="#1f2937"/>
+    <rect x="3" y="3" width="24" height="14" rx="2" fill="#374151"/>
+    <rect x="10" y="18" width="10" height="4" rx="2" fill="#6b7280"/>
+    
+    <!-- Lens cases -->
+    <circle cx="40" cy="10" r="8" fill="#374151"/>
+    <circle cx="40" cy="10" r="6" fill="#1f2937"/>
+    <text x="40" y="25" text-anchor="middle" font-family="Arial" font-size="6" fill="#6b7280">85mm</text>
+    
+    <circle cx="60" cy="10" r="8" fill="#374151"/>
+    <circle cx="60" cy="10" r="6" fill="#1f2937"/>
+    <text x="60" y="25" text-anchor="middle" font-family="Arial" font-size="6" fill="#6b7280">50mm</text>
+    
+    <!-- Memory cards -->
+    <rect x="80" y="5" width="12" height="10" rx="2" fill="#ef4444"/>
+    <rect x="82" y="7" width="8" height="6" rx="1" fill="#dc2626"/>
+    <text x="86" y="22" text-anchor="middle" font-family="Arial" font-size="5" fill="#6b7280">64GB</text>
+    
+    <rect x="95" y="5" width="12" height="10" rx="2" fill="#3b82f6"/>
+    <rect x="97" y="7" width="8" height="6" rx="1" fill="#2563eb"/>
+    <text x="101" y="22" text-anchor="middle" font-family="Arial" font-size="5" fill="#6b7280">128GB</text>
+  </g>
+  
+  <!-- Studio settings panel -->
+  <g transform="translate(320, 220)">
+    <rect x="0" y="0" width="60" height="40" rx="4" fill="white" stroke="#e5e7eb"/>
+    <text x="30" y="10" text-anchor="middle" font-family="Arial" font-size="7" fill="#374151" font-weight="bold">Settings</text>
+    
+    <!-- ISO -->
+    <text x="5" y="20" font-family="Arial" font-size="5" fill="#6b7280">ISO:</text>
+    <text x="25" y="20" font-family="Arial" font-size="5" fill="#374151" font-weight="bold">400</text>
+    
+    <!-- Aperture -->
+    <text x="5" y="27" font-family="Arial" font-size="5" fill="#6b7280">f/</text>
+    <text x="15" y="27" font-family="Arial" font-size="5" fill="#374151" font-weight="bold">2.8</text>
+    
+    <!-- Shutter -->
+    <text x="5" y="34" font-family="Arial" font-size="5" fill="#6b7280">1/</text>
+    <text x="15" y="34" font-family="Arial" font-size="5" fill="#374151" font-weight="bold">125s</text>
+    
+    <!-- Focus mode -->
+    <text x="35" y="20" font-family="Arial" font-size="5" fill="#6b7280">AF:</text>
+    <text x="45" y="20" font-family="Arial" font-size="5" fill="#10b981" font-weight="bold">ON</text>
+    
+    <!-- Metering -->
+    <text x="35" y="27" font-family="Arial" font-size="5" fill="#6b7280">Meter:</text>
+    <text x="35" y="34" font-family="Arial" font-size="5" fill="#374151" font-weight="bold">Spot</text>
+  </g>
+  
+  <!-- Lighting diagram -->
+  <g transform="translate(20, 50)">
+    <rect x="0" y="0" width="60" height="80" rx="4" fill="white" stroke="#e5e7eb"/>
+    <text x="30" y="12" text-anchor="middle" font-family="Arial" font-size="7" fill="#374151" font-weight="bold">Lighting Setup</text>
+    
+    <!-- Diagram elements -->
+    <circle cx="30" cy="40" r="6" fill="#64748b" opacity="0.5"/>
+    <text x="30" y="52" text-anchor="middle" font-family="Arial" font-size="5" fill="#6b7280">Subject</text>
+    
+    <!-- Main light -->
+    <rect x="10" y="25" width="8" height="6" rx="1" fill="url(#lightGradient)"/>
+    <line x1="18" y1="28" x2="24" y2="35" stroke="#f59e0b" stroke-width="2"/>
+    <text x="14" y="22" text-anchor="middle" font-family="Arial" font-size="4" fill="#92400e">Key</text>
+    
+    <!-- Fill light -->
+    <rect x="42" y="25" width="8" height="6" rx="1" fill="url(#lightGradient)" opacity="0.6"/>
+    <line x1="42" y1="28" x2="36" y2="35" stroke="#f59e0b" stroke-width="1" opacity="0.6"/>
+    <text x="46" y="22" text-anchor="middle" font-family="Arial" font-size="4" fill="#92400e">Fill</text>
+    
+    <!-- Camera -->
+    <rect x="26" y="60" width="8" height="6" rx="1" fill="#374151"/>
+    <text x="30" y="72" text-anchor="middle" font-family="Arial" font-size="4" fill="#6b7280">Camera</text>
+  </g>
+  
+  <!-- Portfolio samples -->
+  <g transform="translate(20, 140)">
+    <text x="0" y="10" font-family="Arial" font-size="8" fill="#374151" font-weight="bold">Portfolio Samples</text>
+    
+    <!-- Sample 1 -->
+    <rect x="0" y="15" width="25" height="30" rx="2" fill="white" stroke="#e5e7eb"/>
+    <rect x="2" y="17" width="21" height="26" rx="1" fill="#f3f4f6"/>
+    <ellipse cx="12.5" cy="25" rx="6" ry="8" fill="#64748b" opacity="0.6"/>
+    <ellipse cx="10" cy="22" rx="3" ry="4" fill="white" opacity="0.4"/>
+    
+    <!-- Sample 2 -->
+    <rect x="30" y="15" width="25" height="30" rx="2" fill="white" stroke="#e5e7eb"/>
+    <rect x="32" y="17" width="21" height="26" rx="1" fill="#f3f4f6"/>
+    <ellipse cx="42.5" cy="25" rx="6" ry="8" fill="#64748b" opacity="0.6"/>
+    <ellipse cx="45" cy="22" rx="3" ry="4" fill="white" opacity="0.4"/>
+    
+    <!-- Sample 3 -->
+    <rect x="60" y="15" width="25" height="30" rx="2" fill="white" stroke="#e5e7eb"/>
+    <rect x="62" y="17" width="21" height="26" rx="1" fill="#f3f4f6"/>
+    <ellipse cx="72.5" cy="25" rx="6" ry="8" fill="#64748b" opacity="0.6"/>
+    <ellipse cx="70" cy="22" rx="3" ry="4" fill="white" opacity="0.4"/>
+  </g>
+  
+  <!-- Professional indicators -->
+  <g transform="translate(300, 50)">
+    <circle cx="15" cy="15" r="12" fill="#10b981" opacity="0.2"/>
+    <circle cx="15" cy="15" r="8" fill="#10b981"/>
+    <text x="15" y="18" text-anchor="middle" font-family="Arial" font-size="8" fill="white" font-weight="bold">✓</text>
+    <text x="15" y="35" text-anchor="middle" font-family="Arial" font-size="6" fill="#065f46" font-weight="bold">Professional</text>
+    <text x="15" y="42" text-anchor="middle" font-family="Arial" font-size="5" fill="#6b7280">Studio Quality</text>
+  </g>
+</svg>

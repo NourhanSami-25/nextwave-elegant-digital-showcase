@@ -1,0 +1,143 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="logoGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="logoGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8fafc"/>
+  
+  <!-- Main logo design showcase -->
+  <g transform="translate(150, 80)">
+    <!-- Central logo concept -->
+    <circle cx="50" cy="50" r="35" fill="url(#logoGradient1)"/>
+    <circle cx="50" cy="50" r="25" fill="url(#centerGlow)"/>
+    
+    <!-- Geometric elements -->
+    <polygon points="35,35 65,35 50,20" fill="white" opacity="0.9"/>
+    <polygon points="35,65 65,65 50,80" fill="white" opacity="0.9"/>
+    <polygon points="20,50 35,35 35,65" fill="white" opacity="0.7"/>
+    <polygon points="80,50 65,35 65,65" fill="white" opacity="0.7"/>
+    
+    <!-- Inner symbol -->
+    <circle cx="50" cy="50" r="8" fill="url(#logoGradient2)"/>
+    <rect x="46" y="46" width="8" height="8" rx="2" fill="white"/>
+  </g>
+  
+  <!-- Logo variations -->
+  <g transform="translate(50, 50)">
+    <!-- Minimalist version -->
+    <rect x="0" y="0" width="60" height="60" rx="8" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+    <circle cx="30" cy="30" r="15" fill="url(#logoGradient1)"/>
+    <rect x="25" y="25" width="10" height="10" rx="2" fill="white"/>
+    <text x="30" y="75" text-anchor="middle" font-family="Arial" font-size="8" fill="#6b7280">Minimal</text>
+  </g>
+  
+  <g transform="translate(280, 50)">
+    <!-- Detailed version -->
+    <rect x="0" y="0" width="60" height="60" rx="8" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+    <circle cx="30" cy="30" r="20" fill="url(#logoGradient2)"/>
+    <circle cx="30" cy="30" r="12" fill="white" opacity="0.9"/>
+    <polygon points="22,22 38,22 30,15" fill="url(#logoGradient2)"/>
+    <polygon points="22,38 38,38 30,45" fill="url(#logoGradient2)"/>
+    <circle cx="30" cy="30" r="4" fill="url(#logoGradient2)"/>
+    <text x="30" y="75" text-anchor="middle" font-family="Arial" font-size="8" fill="#6b7280">Detailed</text>
+  </g>
+  
+  <g transform="translate(50, 150)">
+    <!-- Monochrome version -->
+    <rect x="0" y="0" width="60" height="60" rx="8" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+    <circle cx="30" cy="30" r="18" fill="#1f2937"/>
+    <circle cx="30" cy="30" r="10" fill="white"/>
+    <circle cx="30" cy="30" r="4" fill="#1f2937"/>
+    <text x="30" y="75" text-anchor="middle" font-family="Arial" font-size="8" fill="#6b7280">Monochrome</text>
+  </g>
+  
+  <g transform="translate(280, 150)">
+    <!-- Icon version -->
+    <rect x="0" y="0" width="60" height="60" rx="8" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+    <rect x="15" y="15" width="30" height="30" rx="4" fill="url(#logoGradient3)"/>
+    <rect x="20" y="20" width="20" height="20" rx="2" fill="white" opacity="0.9"/>
+    <circle cx="30" cy="30" r="6" fill="url(#logoGradient3)"/>
+    <text x="30" y="75" text-anchor="middle" font-family="Arial" font-size="8" fill="#6b7280">Icon</text>
+  </g>
+  
+  <!-- Typography showcase -->
+  <g transform="translate(120, 220)">
+    <rect x="0" y="0" width="160" height="40" rx="6" fill="white" stroke="#e5e7eb"/>
+    <text x="80" y="15" text-anchor="middle" font-family="Arial" font-size="12" fill="#1f2937" font-weight="bold">BRAND NAME</text>
+    <text x="80" y="28" text-anchor="middle" font-family="Arial" font-size="8" fill="#6b7280" font-style="italic">Creative Solutions</text>
+    <text x="80" y="50" text-anchor="middle" font-family="Arial" font-size="6" fill="#9ca3af">Typography Pairing</text>
+  </g>
+  
+  <!-- Color palette -->
+  <g transform="translate(60, 260)">
+    <text x="0" y="10" font-family="Arial" font-size="8" fill="#374151" font-weight="bold">Color Palette:</text>
+    <circle cx="80" cy="6" r="8" fill="#3b82f6"/>
+    <circle cx="100" cy="6" r="8" fill="#f59e0b"/>
+    <circle cx="120" cy="6" r="8" fill="#ef4444"/>
+    <circle cx="140" cy="6" r="8" fill="#1f2937"/>
+    <circle cx="160" cy="6" r="8" fill="#ffffff" stroke="#d1d5db"/>
+  </g>
+  
+  <!-- Design grid -->
+  <g transform="translate(20, 20)" opacity="0.1">
+    <defs>
+      <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#6b7280" stroke-width="0.5"/>
+      </pattern>
+    </defs>
+    <rect width="360" height="260" fill="url(#grid)"/>
+  </g>
+  
+  <!-- Golden ratio guides -->
+  <g transform="translate(150, 80)" opacity="0.2">
+    <circle cx="50" cy="50" r="35" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="2,2"/>
+    <circle cx="50" cy="50" r="22" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="2,2"/>
+    <line x1="15" y1="50" x2="85" y2="50" stroke="#f59e0b" stroke-width="1" stroke-dasharray="2,2"/>
+    <line x1="50" y1="15" x2="50" y2="85" stroke="#f59e0b" stroke-width="1" stroke-dasharray="2,2"/>
+  </g>
+  
+  <!-- Brand applications preview -->
+  <g transform="translate(320, 200)">
+    <!-- Business card mockup -->
+    <rect x="0" y="0" width="40" height="25" rx="2" fill="white" stroke="#e5e7eb"/>
+    <circle cx="8" cy="8" r="4" fill="url(#logoGradient1)"/>
+    <rect x="15" y="5" width="20" height="2" rx="1" fill="#d1d5db"/>
+    <rect x="15" y="9" width="15" height="1.5" rx="0.75" fill="#d1d5db"/>
+    <rect x="5" y="15" width="25" height="1" rx="0.5" fill="#d1d5db"/>
+    <rect x="5" y="18" width="20" height="1" rx="0.5" fill="#d1d5db"/>
+    <rect x="5" y="21" width="18" height="1" rx="0.5" fill="#d1d5db"/>
+    
+    <text x="20" y="35" text-anchor="middle" font-family="Arial" font-size="6" fill="#6b7280">Business Card</text>
+  </g>
+  
+  <!-- Design process indicators -->
+  <g transform="translate(20, 100)">
+    <circle cx="8" cy="8" r="6" fill="#10b981"/>
+    <text x="8" y="11" text-anchor="middle" font-family="Arial" font-size="8" fill="white" font-weight="bold">✓</text>
+    <text x="8" y="25" text-anchor="middle" font-family="Arial" font-size="6" fill="#065f46">Concept</text>
+    
+    <circle cx="8" cy="50" r="6" fill="#3b82f6"/>
+    <text x="8" y="53" text-anchor="middle" font-family="Arial" font-size="8" fill="white" font-weight="bold">2</text>
+    <text x="8" y="67" text-anchor="middle" font-family="Arial" font-size="6" fill="#1e40af">Design</text>
+    
+    <circle cx="8" cy="92" r="6" fill="#f59e0b"/>
+    <text x="8" y="95" text-anchor="middle" font-family="Arial" font-size="8" fill="white" font-weight="bold">3</text>
+    <text x="8" y="109" text-anchor="middle" font-family="Arial" font-size="6" fill="#92400e">Refine</text>
+  </g>
+</svg>

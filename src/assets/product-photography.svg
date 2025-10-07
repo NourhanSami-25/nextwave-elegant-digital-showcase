@@ -1,0 +1,274 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="studioGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="productGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="watchGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1f2937;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111827;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="perfumeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#be185d;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="lightGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+  </defs>
+  
+  <!-- Studio background -->
+  <rect width="400" height="300" fill="url(#studioGradient)"/>
+  
+  <!-- Studio floor -->
+  <rect x="0" y="200" width="400" height="100" fill="#cbd5e1"/>
+  
+  <!-- Seamless backdrop -->
+  <path d="M 50 200 Q 200 150 350 200 L 350 50 L 50 50 Z" fill="white" filter="url(#shadow)"/>
+  
+  <!-- Main product - Luxury watch -->
+  <g transform="translate(180, 140)">
+    <!-- Watch shadow -->
+    <ellipse cx="20" cy="35" rx="25" ry="8" fill="rgba(0,0,0,0.1)"/>
+    
+    <!-- Watch case -->
+    <circle cx="20" cy="20" r="18" fill="url(#watchGradient)" filter="url(#shadow)"/>
+    <circle cx="20" cy="20" r="15" fill="#374151"/>
+    <circle cx="20" cy="20" r="12" fill="white"/>
+    
+    <!-- Watch face -->
+    <circle cx="20" cy="20" r="10" fill="#f8fafc"/>
+    <circle cx="20" cy="20" r="1" fill="#1f2937"/>
+    
+    <!-- Hour markers -->
+    <rect x="19" y="12" width="2" height="3" fill="#1f2937"/>
+    <rect x="19" y="25" width="2" height="3" fill="#1f2937"/>
+    <rect x="28" y="19" width="3" height="2" fill="#1f2937"/>
+    <rect x="9" y="19" width="3" height="2" fill="#1f2937"/>
+    
+    <!-- Watch hands -->
+    <rect x="19.5" y="15" width="1" height="5" fill="#1f2937"/>
+    <rect x="19.5" y="20" width="1" height="6" fill="#1f2937"/>
+    
+    <!-- Watch band -->
+    <rect x="5" y="18" width="12" height="4" rx="2" fill="url(#watchGradient)"/>
+    <rect x="23" y="18" width="12" height="4" rx="2" fill="url(#watchGradient)"/>
+    
+    <!-- Watch buckle -->
+    <rect x="33" y="19" width="3" height="2" rx="0.5" fill="#9ca3af"/>
+  </g>
+  
+  <!-- Secondary product - Perfume bottle -->
+  <g transform="translate(280, 160)">
+    <!-- Bottle shadow -->
+    <ellipse cx="15" cy="30" rx="12" ry="4" fill="rgba(0,0,0,0.1)"/>
+    
+    <!-- Bottle base -->
+    <rect x="10" y="15" width="10" height="15" rx="2" fill="url(#perfumeGradient)" filter="url(#shadow)"/>
+    
+    <!-- Bottle neck -->
+    <rect x="12" y="10" width="6" height="8" fill="url(#perfumeGradient)"/>
+    
+    <!-- Bottle cap -->
+    <rect x="11" y="8" width="8" height="4" rx="1" fill="#fbbf24"/>
+    <rect x="12" y="6" width="6" height="3" rx="1" fill="#f59e0b"/>
+    
+    <!-- Perfume liquid -->
+    <rect x="11" y="16" width="8" height="12" rx="1" fill="#ec4899" opacity="0.7"/>
+    
+    <!-- Label -->
+    <rect x="11.5" y="20" width="7" height="6" fill="white" opacity="0.9"/>
+    <rect x="12" y="21" width="6" height="1" fill="#be185d"/>
+    <rect x="12" y="23" width="4" height="0.5" fill="#9ca3af"/>
+    <rect x="12" y="24" width="5" height="0.5" fill="#9ca3af"/>
+  </g>
+  
+  <!-- Third product - Smartphone -->
+  <g transform="translate(100, 150)">
+    <!-- Phone shadow -->
+    <ellipse cx="12" cy="35" rx="15" ry="5" fill="rgba(0,0,0,0.1)"/>
+    
+    <!-- Phone body -->
+    <rect x="5" y="10" width="14" height="25" rx="3" fill="url(#productGradient)" filter="url(#shadow)"/>
+    
+    <!-- Screen -->
+    <rect x="6" y="12" width="12" height="20" rx="2" fill="#000000"/>
+    <rect x="6.5" y="12.5" width="11" height="19" rx="1.5" fill="#1e40af"/>
+    
+    <!-- Home button -->
+    <circle cx="12" cy="31" r="1.5" fill="#374151"/>
+    
+    <!-- Camera -->
+    <circle cx="12" cy="14" r="1" fill="#374151"/>
+    
+    <!-- Screen content -->
+    <rect x="7" y="15" width="10" height="2" rx="0.5" fill="white" opacity="0.8"/>
+    <rect x="7" y="18" width="8" height="1" rx="0.3" fill="white" opacity="0.6"/>
+    <rect x="7" y="20" width="9" height="1" rx="0.3" fill="white" opacity="0.6"/>
+    
+    <!-- App icons -->
+    <rect x="7.5" y="22" width="2" height="2" rx="0.3" fill="#10b981"/>
+    <rect x="10" y="22" width="2" height="2" rx="0.3" fill="#f59e0b"/>
+    <rect x="12.5" y="22" width="2" height="2" rx="0.3" fill="#ef4444"/>
+    <rect x="15" y="22" width="2" height="2" rx="0.3" fill="#8b5cf6"/>
+  </g>
+  
+  <!-- Professional lighting setup -->
+  <g transform="translate(50, 50)">
+    <!-- Main softbox -->
+    <rect x="0" y="0" width="25" height="20" rx="2" fill="#374151"/>
+    <rect x="2" y="2" width="21" height="16" rx="1" fill="white"/>
+    <rect x="4" y="4" width="17" height="12" rx="1" fill="#fbbf24" opacity="0.3"/>
+    
+    <!-- Light stand -->
+    <rect x="11" y="20" width="3" height="40" fill="#6b7280"/>
+    <rect x="8" y="55" width="9" height="3" fill="#6b7280"/>
+    
+    <!-- Light beam -->
+    <polygon points="25,10 180,120 180,160 25,20" fill="url(#lightGradient)" opacity="0.4"/>
+  </g>
+  
+  <g transform="translate(320, 60)">
+    <!-- Fill light -->
+    <rect x="0" y="0" width="20" height="15" rx="2" fill="#374151"/>
+    <rect x="2" y="2" width="16" height="11" rx="1" fill="white"/>
+    <rect x="3" y="3" width="14" height="9" rx="1" fill="#fbbf24" opacity="0.2"/>
+    
+    <!-- Light stand -->
+    <rect x="8" y="15" width="2" height="30" fill="#6b7280"/>
+    <rect x="6" y="42" width="6" height="2" fill="#6b7280"/>
+    
+    <!-- Fill light beam -->
+    <polygon points="0,8 -120,120 -120,140 0,15" fill="url(#lightGradient)" opacity="0.2"/>
+  </g>
+  
+  <!-- Reflector -->
+  <g transform="translate(30, 180)">
+    <ellipse cx="20" cy="10" rx="18" ry="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+    <ellipse cx="20" cy="10" rx="15" ry="6" fill="white"/>
+    
+    <!-- Reflector stand -->
+    <rect x="19" y="18" width="2" height="15" fill="#6b7280"/>
+    <rect x="15" y="30" width="10" height="2" fill="#6b7280"/>
+  </g>
+  
+  <!-- Camera setup -->
+  <g transform="translate(200, 220)">
+    <!-- Tripod legs -->
+    <line x1="0" y1="0" x2="-15" y2="25" stroke="#374151" stroke-width="2"/>
+    <line x1="0" y1="0" x2="15" y2="25" stroke="#374151" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="30" stroke="#374151" stroke-width="2"/>
+    
+    <!-- Tripod head -->
+    <rect x="-3" y="-5" width="6" height="8" rx="1" fill="#1f2937"/>
+    
+    <!-- Camera body -->
+    <rect x="-8" y="-15" width="16" height="10" rx="2" fill="#000000"/>
+    
+    <!-- Lens -->
+    <rect x="-6" y="-20" width="12" height="8" rx="1" fill="#374151"/>
+    <circle cx="0" cy="-16" r="4" fill="#1f2937"/>
+    <circle cx="0" cy="-16" r="3" fill="#000000"/>
+    
+    <!-- Camera details -->
+    <rect x="-7" y="-14" width="3" height="2" rx="0.5" fill="#fbbf24"/>
+    <circle cx="5" cy="-12" r="1" fill="#ef4444"/>
+  </g>
+  
+  <!-- Studio equipment panel -->
+  <g transform="translate(20, 20)">
+    <rect x="0" y="0" width="140" height="60" rx="4" fill="rgba(255,255,255,0.95)" stroke="#e5e7eb"/>
+    <text x="70" y="12" text-anchor="middle" font-family="Arial" font-size="9" fill="#374151" font-weight="bold">Product Photography Studio</text>
+    
+    <text x="5" y="24" font-family="Arial" font-size="6" fill="#6b7280">Lighting Setup:</text>
+    <text x="5" y="32" font-family="Arial" font-size="5" fill="#374151">• Main softbox (key light)</text>
+    <text x="5" y="38" font-family="Arial" font-size="5" fill="#374151">• Fill light (shadow reduction)</text>
+    <text x="5" y="44" font-family="Arial" font-size="5" fill="#374151">• Reflector (highlight enhancement)</text>
+    
+    <text x="75" y="24" font-family="Arial" font-size="6" fill="#6b7280">Products:</text>
+    <text x="75" y="32" font-family="Arial" font-size="5" fill="#374151">• Luxury watch</text>
+    <text x="75" y="38" font-family="Arial" font-size="5" fill="#374151">• Perfume bottle</text>
+    <text x="75" y="44" font-family="Arial" font-size="5" fill="#374151">• Smartphone</text>
+    
+    <text x="5" y="54" font-family="Arial" font-size="6" fill="#10b981" font-weight="bold">Professional E-commerce Ready</text>
+  </g>
+  
+  <!-- Camera settings display -->
+  <g transform="translate(250, 20)">
+    <rect x="0" y="0" width="130" height="50" rx="4" fill="rgba(0,0,0,0.9)"/>
+    <text x="65" y="12" text-anchor="middle" font-family="Arial" font-size="8" fill="white" font-weight="bold">Camera Settings</text>
+    
+    <text x="5" y="22" font-family="Arial" font-size="6" fill="#d1d5db">ISO:</text>
+    <text x="25" y="22" font-family="Arial" font-size="6" fill="#fbbf24" font-weight="bold">100</text>
+    
+    <text x="45" y="22" font-family="Arial" font-size="6" fill="#d1d5db">f/</text>
+    <text x="55" y="22" font-family="Arial" font-size="6" fill="#fbbf24" font-weight="bold">8.0</text>
+    
+    <text x="75" y="22" font-family="Arial" font-size="6" fill="#d1d5db">1/</text>
+    <text x="85" y="22" font-family="Arial" font-size="6" fill="#fbbf24" font-weight="bold">125s</text>
+    
+    <text x="105" y="22" font-family="Arial" font-size="6" fill="#d1d5db">WB:</text>
+    <text x="115" y="22" font-family="Arial" font-size="5" fill="#10b981" font-weight="bold">5600K</text>
+    
+    <text x="5" y="32" font-family="Arial" font-size="6" fill="#d1d5db">Mode:</text>
+    <text x="30" y="32" font-family="Arial" font-size="6" fill="#10b981" font-weight="bold">Manual</text>
+    
+    <text x="65" y="32" font-family="Arial" font-size="6" fill="#d1d5db">Focus:</text>
+    <text x="90" y="32" font-family="Arial" font-size="6" fill="#10b981" font-weight="bold">Single AF</text>
+    
+    <text x="5" y="42" font-family="Arial" font-size="6" fill="#d1d5db">Metering:</text>
+    <text x="40" y="42" font-family="Arial" font-size="6" fill="#fbbf24" font-weight="bold">Matrix</text>
+    
+    <text x="70" y="42" font-family="Arial" font-size="6" fill="#d1d5db">Format:</text>
+    <text x="95" y="42" font-family="Arial" font-size="6" fill="#ec4899" font-weight="bold">RAW+JPEG</text>
+  </g>
+  
+  <!-- Post-processing workflow -->
+  <g transform="translate(20, 250)">
+    <rect x="0" y="0" width="180" height="40" rx="4" fill="rgba(255,255,255,0.95)" stroke="#e5e7eb"/>
+    <text x="90" y="10" text-anchor="middle" font-family="Arial" font-size="7" fill="#374151" font-weight="bold">Post-Processing Workflow</text>
+    
+    <text x="5" y="20" font-family="Arial" font-size="5" fill="#6b7280">1. RAW processing in Lightroom</text>
+    <text x="5" y="26" font-family="Arial" font-size="5" fill="#6b7280">2. Color correction &amp; exposure adjustment</text>
+    <text x="5" y="32" font-family="Arial" font-size="5" fill="#6b7280">3. Background cleanup in Photoshop</text>
+    <text x="5" y="38" font-family="Arial" font-size="5" fill="#6b7280">4. Final retouching &amp; export for web</text>
+    
+    <text x="95" y="20" font-family="Arial" font-size="5" fill="#6b7280">• Highlight/shadow recovery</text>
+    <text x="95" y="26" font-family="Arial" font-size="5" fill="#6b7280">• Product detail enhancement</text>
+    <text x="95" y="32" font-family="Arial" font-size="5" fill="#6b7280">• Consistent white balance</text>
+    <text x="95" y="38" font-family="Arial" font-size="5" fill="#6b7280">• Multiple format delivery</text>
+  </g>
+  
+  <!-- Quality indicators -->
+  <g transform="translate(220, 250)">
+    <rect x="0" y="0" width="160" height="40" rx="4" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981"/>
+    <text x="80" y="10" text-anchor="middle" font-family="Arial" font-size="7" fill="#065f46" font-weight="bold">Quality Standards</text>
+    
+    <text x="5" y="20" font-family="Arial" font-size="5" fill="#047857">✓ High resolution (300 DPI)</text>
+    <text x="5" y="26" font-family="Arial" font-size="5" fill="#047857">✓ Consistent lighting</text>
+    <text x="5" y="32" font-family="Arial" font-size="5" fill="#047857">✓ Clean backgrounds</text>
+    <text x="5" y="38" font-family="Arial" font-size="5" fill="#047857">✓ Color accuracy</text>
+    
+    <text x="85" y="20" font-family="Arial" font-size="5" fill="#047857">✓ Multiple angles</text>
+    <text x="85" y="26" font-family="Arial" font-size="5" fill="#047857">✓ Detail shots</text>
+    <text x="85" y="32" font-family="Arial" font-size="5" fill="#047857">✓ E-commerce ready</text>
+    <text x="85" y="38" font-family="Arial" font-size="5" fill="#047857">✓ Fast delivery</text>
+  </g>
+  
+  <!-- Professional badge -->
+  <g transform="translate(360, 250)">
+    <circle cx="20" cy="20" r="15" fill="#3b82f6"/>
+    <circle cx="20" cy="20" r="10" fill="white"/>
+    <text x="20" y="23" text-anchor="middle" font-family="Arial" font-size="8" fill="#3b82f6" font-weight="bold">📦</text>
+    <text x="20" y="45" text-anchor="middle" font-family="Arial" font-size="6" fill="#1e40af" font-weight="bold">Product</text>
+    <text x="20" y="52" text-anchor="middle" font-family="Arial" font-size="5" fill="#6b7280">Photography</text>
+  </g>
+</svg>

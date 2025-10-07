@@ -1,0 +1,114 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brandGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="brandGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8fafc"/>
+  
+  <!-- Main logo design area -->
+  <rect x="50" y="50" width="300" height="200" rx="16" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Logo concept -->
+  <g transform="translate(200, 120)">
+    <!-- Central brand mark -->
+    <circle cx="0" cy="0" r="30" fill="url(#brandGradient1)"/>
+    <circle cx="0" cy="0" r="20" fill="white" opacity="0.9"/>
+    <polygon points="-10,-10 10,-10 15,0 10,10 -10,10 -15,0" fill="url(#brandGradient1)"/>
+    
+    <!-- Brand name -->
+    <rect x="-40" y="40" width="80" height="12" rx="6" fill="#1f2937"/>
+    <rect x="-30" y="56" width="60" height="6" rx="3" fill="#6b7280"/>
+  </g>
+  
+  <!-- Color palette -->
+  <g transform="translate(70, 80)">
+    <text x="0" y="-5" font-family="Arial" font-size="10" fill="#374151" font-weight="bold">Color Palette</text>
+    <circle cx="10" cy="10" r="8" fill="#8b5cf6"/>
+    <circle cx="30" cy="10" r="8" fill="#3b82f6"/>
+    <circle cx="50" cy="10" r="8" fill="#10b981"/>
+    <circle cx="70" cy="10" r="8" fill="#f59e0b"/>
+    <circle cx="90" cy="10" r="8" fill="#ef4444"/>
+  </g>
+  
+  <!-- Typography samples -->
+  <g transform="translate(280, 80)">
+    <text x="0" y="-5" font-family="Arial" font-size="10" fill="#374151" font-weight="bold">Typography</text>
+    <rect x="0" y="5" width="40" height="8" rx="4" fill="#1f2937"/>
+    <rect x="0" y="18" width="35" height="6" rx="3" fill="#6b7280"/>
+    <rect x="0" y="28" width="30" height="5" rx="2.5" fill="#9ca3af"/>
+    <rect x="0" y="37" width="25" height="4" rx="2" fill="#d1d5db"/>
+  </g>
+  
+  <!-- Brand applications -->
+  <g transform="translate(70, 180)">
+    <!-- Business card -->
+    <rect x="0" y="0" width="40" height="25" rx="3" fill="white" stroke="#e5e7eb"/>
+    <rect x="3" y="3" width="15" height="8" rx="2" fill="url(#brandGradient1)"/>
+    <rect x="3" y="14" width="25" height="2" rx="1" fill="#d1d5db"/>
+    <rect x="3" y="18" width="20" height="1.5" rx="0.75" fill="#d1d5db"/>
+    <rect x="3" y="21" width="18" height="1.5" rx="0.75" fill="#d1d5db"/>
+    
+    <!-- Letterhead -->
+    <rect x="50" y="0" width="30" height="40" rx="2" fill="white" stroke="#e5e7eb"/>
+    <rect x="52" y="2" width="26" height="6" rx="1" fill="url(#brandGradient1)"/>
+    <rect x="54" y="12" width="22" height="1" rx="0.5" fill="#d1d5db"/>
+    <rect x="54" y="15" width="20" height="1" rx="0.5" fill="#d1d5db"/>
+    <rect x="54" y="18" width="18" height="1" rx="0.5" fill="#d1d5db"/>
+    <rect x="54" y="25" width="15" height="1" rx="0.5" fill="#d1d5db"/>
+    <rect x="54" y="28" width="12" height="1" rx="0.5" fill="#d1d5db"/>
+  </g>
+  
+  <!-- Brand guidelines -->
+  <g transform="translate(250, 180)">
+    <rect x="0" y="0" width="80" height="50" rx="4" fill="white" stroke="#e5e7eb"/>
+    <text x="40" y="12" text-anchor="middle" font-family="Arial" font-size="8" fill="#374151" font-weight="bold">Brand Guidelines</text>
+    
+    <!-- Logo usage examples -->
+    <rect x="5" y="18" width="15" height="8" rx="2" fill="url(#brandGradient1)" opacity="0.3"/>
+    <circle cx="12.5" cy="22" r="2" fill="url(#brandGradient1)"/>
+    
+    <rect x="25" y="18" width="15" height="8" rx="2" fill="#1f2937" opacity="0.1"/>
+    <circle cx="32.5" cy="22" r="2" fill="#1f2937"/>
+    
+    <rect x="45" y="18" width="15" height="8" rx="2" fill="white" stroke="#e5e7eb"/>
+    <circle cx="52.5" cy="22" r="2" fill="url(#brandGradient1)"/>
+    
+    <!-- Usage rules -->
+    <rect x="5" y="32" width="70" height="1" rx="0.5" fill="#d1d5db"/>
+    <rect x="5" y="36" width="60" height="1" rx="0.5" fill="#d1d5db"/>
+    <rect x="5" y="40" width="55" height="1" rx="0.5" fill="#d1d5db"/>
+    <rect x="5" y="44" width="50" height="1" rx="0.5" fill="#d1d5db"/>
+  </g>
+  
+  <!-- Design elements -->
+  <g transform="translate(120, 220)">
+    <!-- Geometric patterns -->
+    <polygon points="0,0 10,0 15,8.66 10,17.32 0,17.32 -5,8.66" fill="url(#brandGradient2)" opacity="0.3"/>
+    <polygon points="20,0 30,0 35,8.66 30,17.32 20,17.32 15,8.66" fill="url(#brandGradient1)" opacity="0.3"/>
+    <polygon points="40,0 50,0 55,8.66 50,17.32 40,17.32 35,8.66" fill="#f59e0b" opacity="0.3"/>
+    
+    <!-- Grid system -->
+    <g transform="translate(70, 0)">
+      <rect x="0" y="0" width="40" height="20" fill="none" stroke="#e5e7eb" stroke-width="0.5"/>
+      <line x1="10" y1="0" x2="10" y2="20" stroke="#e5e7eb" stroke-width="0.5"/>
+      <line x1="20" y1="0" x2="20" y2="20" stroke="#e5e7eb" stroke-width="0.5"/>
+      <line x1="30" y1="0" x2="30" y2="20" stroke="#e5e7eb" stroke-width="0.5"/>
+      <line x1="0" y1="5" x2="40" y2="5" stroke="#e5e7eb" stroke-width="0.5"/>
+      <line x1="0" y1="10" x2="40" y2="10" stroke="#e5e7eb" stroke-width="0.5"/>
+      <line x1="0" y1="15" x2="40" y2="15" stroke="#e5e7eb" stroke-width="0.5"/>
+      
+      <!-- Sample content in grid -->
+      <rect x="2" y="2" width="6" height="6" fill="url(#brandGradient1)" opacity="0.7"/>
+      <rect x="12" y="7" width="16" height="2" fill="#1f2937" opacity="0.5"/>
+      <rect x="12" y="11" width="12" height="2" fill="#6b7280" opacity="0.5"/>
+    </g>
+  </g>
+</svg>

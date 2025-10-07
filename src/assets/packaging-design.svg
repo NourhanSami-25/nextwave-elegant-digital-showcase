@@ -1,0 +1,137 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="packageGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="packageGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="packageGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f1f5f9"/>
+  
+  <!-- Main product box (3D perspective) -->
+  <g transform="translate(150, 80)">
+    <!-- Front face -->
+    <rect x="0" y="20" width="80" height="100" fill="url(#packageGradient1)"/>
+    <!-- Top face -->
+    <polygon points="0,20 15,5 95,5 80,20" fill="#fbbf24"/>
+    <!-- Right face -->
+    <polygon points="80,20 95,5 95,105 80,120" fill="#d97706"/>
+    
+    <!-- Product label on front -->
+    <rect x="10" y="35" width="60" height="40" rx="4" fill="white" opacity="0.9"/>
+    <rect x="15" y="40" width="50" height="8" rx="4" fill="url(#packageGradient1)"/>
+    <rect x="15" y="52" width="35" height="3" rx="1.5" fill="#92400e"/>
+    <rect x="15" y="58" width="40" height="3" rx="1.5" fill="#92400e"/>
+    <rect x="15" y="64" width="30" height="3" rx="1.5" fill="#92400e"/>
+    
+    <!-- Barcode -->
+    <g transform="translate(15, 85)">
+      <rect x="0" y="0" width="1" height="12" fill="#1f2937"/>
+      <rect x="3" y="0" width="2" height="12" fill="#1f2937"/>
+      <rect x="7" y="0" width="1" height="12" fill="#1f2937"/>
+      <rect x="10" y="0" width="3" height="12" fill="#1f2937"/>
+      <rect x="15" y="0" width="1" height="12" fill="#1f2937"/>
+      <rect x="18" y="0" width="2" height="12" fill="#1f2937"/>
+      <rect x="22" y="0" width="1" height="12" fill="#1f2937"/>
+      <rect x="25" y="0" width="1" height="12" fill="#1f2937"/>
+      <rect x="28" y="0" width="2" height="12" fill="#1f2937"/>
+      <rect x="32" y="0" width="1" height="12" fill="#1f2937"/>
+      <rect x="35" y="0" width="3" height="12" fill="#1f2937"/>
+      <rect x="40" y="0" width="1" height="12" fill="#1f2937"/>
+    </g>
+    
+    <!-- Premium seal -->
+    <circle cx="65" cy="45" r="8" fill="#ef4444"/>
+    <text x="65" y="48" text-anchor="middle" font-family="Arial" font-size="6" fill="white" font-weight="bold">★</text>
+  </g>
+  
+  <!-- Secondary package variations -->
+  <g transform="translate(50, 120)">
+    <!-- Small box -->
+    <rect x="0" y="15" width="40" height="60" fill="url(#packageGradient2)"/>
+    <polygon points="0,15 8,7 48,7 40,15" fill="#34d399"/>
+    <polygon points="40,15 48,7 48,67 40,75" fill="#047857"/>
+    
+    <!-- Label -->
+    <rect x="5" y="25" width="30" height="20" rx="2" fill="white" opacity="0.9"/>
+    <rect x="8" y="28" width="24" height="4" rx="2" fill="url(#packageGradient2)"/>
+    <rect x="8" y="35" width="18" height="2" rx="1" fill="#065f46"/>
+    <rect x="8" y="39" width="20" height="2" rx="1" fill="#065f46"/>
+  </g>
+  
+  <g transform="translate(280, 100)">
+    <!-- Tall box -->
+    <rect x="0" y="10" width="50" height="80" fill="url(#packageGradient3)"/>
+    <polygon points="0,10 10,0 60,0 50,10" fill="#a78bfa"/>
+    <polygon points="50,10 60,0 60,80 50,90" fill="#6d28d9"/>
+    
+    <!-- Elegant label -->
+    <rect x="8" y="25" width="34" height="30" rx="3" fill="white" opacity="0.95"/>
+    <rect x="12" y="30" width="26" height="6" rx="3" fill="url(#packageGradient3)"/>
+    <rect x="12" y="40" width="20" height="2" rx="1" fill="#581c87"/>
+    <rect x="12" y="44" width="22" height="2" rx="1" fill="#581c87"/>
+    <rect x="12" y="48" width="18" height="2" rx="1" fill="#581c87"/>
+    
+    <!-- Premium ribbon -->
+    <rect x="20" y="15" width="10" height="25" fill="#fbbf24"/>
+    <polygon points="20,40 25,45 30,40" fill="#f59e0b"/>
+  </g>
+  
+  <!-- Design elements and patterns -->
+  <g transform="translate(60, 220)">
+    <!-- Pattern swatches -->
+    <rect x="0" y="0" width="20" height="20" fill="url(#packageGradient1)" opacity="0.3"/>
+    <circle cx="5" cy="5" r="2" fill="white"/>
+    <circle cx="15" cy="5" r="2" fill="white"/>
+    <circle cx="5" cy="15" r="2" fill="white"/>
+    <circle cx="15" cy="15" r="2" fill="white"/>
+    
+    <rect x="25" y="0" width="20" height="20" fill="url(#packageGradient2)" opacity="0.3"/>
+    <polygon points="30,5 35,0 40,5 35,10" fill="white"/>
+    <polygon points="30,15 35,10 40,15 35,20" fill="white"/>
+    
+    <rect x="50" y="0" width="20" height="20" fill="url(#packageGradient3)" opacity="0.3"/>
+    <rect x="53" y="3" width="14" height="2" fill="white"/>
+    <rect x="53" y="8" width="14" height="2" fill="white"/>
+    <rect x="53" y="13" width="14" height="2" fill="white"/>
+  </g>
+  
+  <!-- Typography samples -->
+  <g transform="translate(200, 220)">
+    <rect x="0" y="0" width="60" height="25" rx="4" fill="white" stroke="#e5e7eb"/>
+    <text x="30" y="8" text-anchor="middle" font-family="Arial" font-size="6" fill="#374151" font-weight="bold">PREMIUM</text>
+    <text x="30" y="15" text-anchor="middle" font-family="Arial" font-size="8" fill="#1f2937" font-weight="bold">Brand Name</text>
+    <text x="30" y="22" text-anchor="middle" font-family="Arial" font-size="5" fill="#6b7280">Luxury Collection</text>
+  </g>
+  
+  <!-- Color coordination -->
+  <g transform="translate(300, 220)">
+    <circle cx="10" cy="10" r="6" fill="#f59e0b"/>
+    <circle cx="25" cy="10" r="6" fill="#10b981"/>
+    <circle cx="40" cy="10" r="6" fill="#8b5cf6"/>
+    <line x1="10" y1="20" x2="40" y2="20" stroke="#d1d5db" stroke-width="1"/>
+    <text x="25" y="30" text-anchor="middle" font-family="Arial" font-size="6" fill="#6b7280">Color Harmony</text>
+  </g>
+  
+  <!-- Quality indicators -->
+  <g transform="translate(120, 50)">
+    <circle cx="15" cy="15" r="12" fill="#10b981" opacity="0.2"/>
+    <circle cx="15" cy="15" r="8" fill="#10b981" opacity="0.4"/>
+    <circle cx="15" cy="15" r="4" fill="#10b981"/>
+    <text x="15" y="35" text-anchor="middle" font-family="Arial" font-size="7" fill="#065f46" font-weight="bold">ECO</text>
+  </g>
+  
+  <g transform="translate(280, 50)">
+    <polygon points="15,5 18,12 25,12 20,17 22,24 15,20 8,24 10,17 5,12 12,12" fill="#fbbf24"/>
+    <text x="15" y="35" text-anchor="middle" font-family="Arial" font-size="7" fill="#92400e" font-weight="bold">PREMIUM</text>
+  </g>
+</svg>

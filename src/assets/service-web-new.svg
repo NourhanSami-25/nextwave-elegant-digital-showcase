@@ -1,0 +1,124 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="webGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </linearGradient>
+    <filter id="deviceShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#webGradient)" opacity="0.1"/>
+  
+  <!-- Desktop Monitor -->
+  <rect x="120" y="60" width="160" height="100" rx="8" fill="#2c3e50" filter="url(#deviceShadow)"/>
+  <rect x="125" y="65" width="150" height="85" rx="4" fill="url(#screenGradient)"/>
+  <rect x="190" y="160" width="20" height="15" fill="#34495e"/>
+  <ellipse cx="200" cy="185" rx="30" ry="5" fill="#bdc3c7"/>
+  
+  <!-- Website Content on Desktop -->
+  <rect x="130" y="70" width="140" height="15" rx="2" fill="#4facfe"/>
+  <circle cx="140" cy="77" r="2" fill="white"/>
+  <circle cx="148" cy="77" r="2" fill="white"/>
+  <circle cx="156" cy="77" r="2" fill="white"/>
+  
+  <!-- Navigation -->
+  <rect x="130" y="90" width="20" height="3" rx="1" fill="#2c3e50"/>
+  <rect x="155" y="90" width="25" height="3" rx="1" fill="#2c3e50"/>
+  <rect x="185" y="90" width="20" height="3" rx="1" fill="#2c3e50"/>
+  <rect x="210" y="90" width="25" height="3" rx="1" fill="#2c3e50"/>
+  <rect x="240" y="90" width="25" height="3" rx="1" fill="#4facfe"/>
+  
+  <!-- Content Blocks -->
+  <rect x="135" y="100" width="60" height="25" rx="3" fill="#ecf0f1"/>
+  <rect x="200" y="100" width="60" height="25" rx="3" fill="#ecf0f1"/>
+  <rect x="135" y="130" width="125" height="8" rx="1" fill="#bdc3c7"/>
+  <rect x="135" y="140" width="100" height="5" rx="1" fill="#ecf0f1"/>
+  
+  <!-- Tablet -->
+  <rect x="50" y="120" width="60" height="80" rx="8" fill="#34495e" filter="url(#deviceShadow)"/>
+  <rect x="55" y="125" width="50" height="70" rx="4" fill="url(#screenGradient)"/>
+  <circle cx="80" cy="210" r="3" fill="#7f8c8d"/>
+  
+  <!-- Tablet Content -->
+  <rect x="60" y="130" width="40" height="8" rx="1" fill="#4facfe"/>
+  <rect x="60" y="145" width="15" height="15" rx="2" fill="#ecf0f1"/>
+  <rect x="80" y="145" width="15" height="15" rx="2" fill="#ecf0f1"/>
+  <rect x="60" y="165" width="35" height="3" rx="1" fill="#bdc3c7"/>
+  <rect x="60" y="170" width="30" height="3" rx="1" fill="#bdc3c7"/>
+  <rect x="60" y="180" width="35" height="8" rx="1" fill="#27ae60"/>
+  
+  <!-- Mobile Phone -->
+  <rect x="320" y="100" width="40" height="70" rx="8" fill="#2c3e50" filter="url(#deviceShadow)"/>
+  <rect x="325" y="105" width="30" height="55" rx="4" fill="url(#screenGradient)"/>
+  <circle cx="340" cy="175" r="2" fill="#7f8c8d"/>
+  
+  <!-- Mobile Content -->
+  <rect x="330" y="110" width="20" height="5" rx="1" fill="#4facfe"/>
+  <rect x="330" y="120" width="8" height="8" rx="1" fill="#ecf0f1"/>
+  <rect x="342" y="120" width="8" height="8" rx="1" fill="#ecf0f1"/>
+  <rect x="330" y="135" width="18" height="2" rx="1" fill="#bdc3c7"/>
+  <rect x="330" y="140" width="15" height="2" rx="1" fill="#bdc3c7"/>
+  <rect x="330" y="150" width="18" height="5" rx="1" fill="#e74c3c"/>
+  
+  <!-- Code Editor -->
+  <rect x="30" y="30" width="100" height="70" rx="5" fill="#2c3e50" filter="url(#deviceShadow)"/>
+  <rect x="35" y="35" width="90" height="60" rx="3" fill="#1e1e1e"/>
+  
+  <!-- Code Lines -->
+  <rect x="40" y="42" width="3" height="3" fill="#f39c12"/>
+  <rect x="45" y="42" width="15" height="3" fill="#e74c3c"/>
+  <rect x="62" y="42" width="10" height="3" fill="#27ae60"/>
+  
+  <rect x="40" y="50" width="8" height="3" fill="#3498db"/>
+  <rect x="50" y="50" width="20" height="3" fill="#9b59b6"/>
+  <rect x="72" y="50" width="5" height="3" fill="#f39c12"/>
+  
+  <rect x="40" y="58" width="12" height="3" fill="#e74c3c"/>
+  <rect x="54" y="58" width="18" height="3" fill="#27ae60"/>
+  
+  <rect x="40" y="66" width="6" height="3" fill="#3498db"/>
+  <rect x="48" y="66" width="25" height="3" fill="#95a5a6"/>
+  
+  <rect x="40" y="74" width="10" height="3" fill="#f39c12"/>
+  <rect x="52" y="74" width="15" height="3" fill="#e74c3c"/>
+  
+  <rect x="40" y="82" width="20" height="3" fill="#9b59b6"/>
+  <rect x="62" y="82" width="8" height="3" fill="#27ae60"/>
+  
+  <!-- Design Tools -->
+  <g transform="translate(300, 30)">
+    <!-- Color Palette -->
+    <circle cx="0" cy="0" r="5" fill="#e74c3c"/>
+    <circle cx="15" cy="0" r="5" fill="#3498db"/>
+    <circle cx="30" cy="0" r="5" fill="#27ae60"/>
+    <circle cx="45" cy="0" r="5" fill="#f39c12"/>
+    
+    <!-- Wireframe Tool -->
+    <rect x="0" y="15" width="15" height="10" rx="2" fill="none" stroke="#7f8c8d" stroke-width="1"/>
+    <rect x="2" y="17" width="11" height="2" fill="#bdc3c7"/>
+    <rect x="2" y="20" width="5" height="3" fill="#ecf0f1"/>
+    <rect x="8" y="20" width="5" height="3" fill="#ecf0f1"/>
+    
+    <!-- Responsive Icon -->
+    <rect x="25" y="15" width="8" height="5" rx="1" fill="none" stroke="#7f8c8d" stroke-width="1"/>
+    <rect x="35" y="17" width="5" height="3" rx="1" fill="none" stroke="#7f8c8d" stroke-width="1"/>
+    <rect x="42" y="18" width="3" height="2" rx="1" fill="none" stroke="#7f8c8d" stroke-width="1"/>
+  </g>
+  
+  <!-- Floating Elements -->
+  <circle cx="20" cy="200" r="4" fill="#4facfe" opacity="0.6"/>
+  <circle cx="380" cy="250" r="3" fill="#00f2fe" opacity="0.6"/>
+  <circle cx="15" cy="150" r="2" fill="#4facfe" opacity="0.4"/>
+  <circle cx="385" cy="50" r="3" fill="#00f2fe" opacity="0.5"/>
+  
+  <!-- Connection Lines -->
+  <path d="M200,180 Q250,200 320,140" stroke="#4facfe" stroke-width="2" fill="none" opacity="0.3" stroke-dasharray="5,5"/>
+  <path d="M110,140 Q150,160 200,180" stroke="#4facfe" stroke-width="2" fill="none" opacity="0.3" stroke-dasharray="5,5"/>
+</svg>

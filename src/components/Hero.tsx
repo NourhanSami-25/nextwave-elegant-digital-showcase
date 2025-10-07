@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const Hero = () => {
+  const { t } = useLanguage();
+  
   const scrollToServices = () => {
     const element = document.getElementById("services");
     if (element) {
@@ -29,15 +32,15 @@ export const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-heading font-bold mb-6 text-foreground">
             <span className="inline-block transition-elegant hover:scale-110 cursor-default">
-              Next
+              {t('hero.title.next')}
             </span>
             <span className="inline-block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-scale-in transition-elegant hover:scale-110 cursor-default">
-              Wave
+              {t('hero.title.wave')}
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto font-light">
-            Elevating brands through elegant design and strategic creativity
+            {t('hero.description')}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -47,7 +50,7 @@ export const Hero = () => {
               onClick={scrollToServices}
               className="group"
             >
-              Explore Our Services
+              {t('hero.buttons.exploreServices')}
               <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-smooth" />
             </Button>
             <Button
@@ -58,7 +61,7 @@ export const Hero = () => {
                 element?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              Get in Touch
+              {t('hero.buttons.getInTouch')}
             </Button>
           </div>
         </div>
